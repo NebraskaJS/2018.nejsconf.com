@@ -1,0 +1,17 @@
+{
+  "name": "nejsconf-2018",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Web site for NEJS CONF 2018",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "NEJS CONF"
+  ],
+  "author": "Zach Leatherman",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^0.3.1"
+  }
+}

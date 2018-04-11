@@ -1,0 +1,132 @@
+/* Global */
+body {
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3 {
+	text-transform: uppercase;
+}
+h2 {
+	margin-top: 5em;
+	margin-bottom: 1.5em;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Web Fonts */
+.wf-effra-i9-active body {
+	font-family: Effra, sans-serif;
+}
+
+/* Style Guide Widget */
+.sg-c {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+.sg-c > :not(.sg-component-full) {
+	width: 100%;
+	max-width: 60rem; /* 960px /16 */
+	margin-left: auto;
+	margin-right: auto;
+}
+.sg-c > .sg-component-full {
+	margin-left: -.5rem;
+	margin-right: -.5rem;
+}
+
+/* Hero */
+.hero {
+	display: flex;
+	justify-content: flex-start;
+	position: relative;
+	background-image: url(/assets/img/space-bg.png);
+	background-color: #24302d;
+}
+.hero-img {
+	width: 60%;
+	max-width: 25.625rem; /* 410px /16 */
+	background-image: url(/assets/img/earth-nobg-crop.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 43.6875em) { /* 699px */
+	.hero .hero-img {
+		display: none;
+	}
+}
+
+.hero-title {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex: 1;
+	padding: 1.5em;
+	z-index: 2;
+}
+
+.hero-title-text {
+	text-align: center;
+	color: #fff;
+	font-size: 5rem; /* 80px /16 */
+	margin: 2.5rem 0;
+}
+.hero-title-text span {
+	display: block;
+	margin-bottom: -22px;
+}
+.hero-title-text span:first-child {
+	font-size: 5.5rem; /* 88px /16 */
+}
+.hero-title-year {
+	font-size: 2rem;
+	background-color: #fcec31;
+	color: #2d2225;
+	font-weight: 400;
+	letter-spacing: 6px;
+	padding-left: 14px;
+	padding-right: 8px;
+}
+.hero-title-text .hero-title-year {
+	display: inline-block;
+	margin-bottom: 0;
+	position: relative;
+	top: -16px;
+}
+
+/* Hero quote */
+.hero-quote {
+	position: relative;
+	font-size: 1.5rem; /* 24px /16 */
+	margin: 0 auto;
+	max-width: 50rem; /* 800px /16 */
+	min-height: 3em;
+	line-height: 1.5;
+}
+.hero-quote:before {
+	content: "";
+	display: inline-block;
+	float: left;
+	width: 3.666666666667em; /* 88px /24 */
+	min-height: 3em;
+	background-image: url(/assets/img/moon.png);
+	background-size: 60px 60px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	border-right: 8px solid #231f20;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+@media (min-width: 400px) {
+	.hero-quote {
+		padding-left: 6.25em; /* 150px /24 */
+	}
+	.hero-quote:before {
+		position: absolute;
+		left: 0;
+		top: -10px;
+		bottom: -10px;
+		margin-bottom: 0;
+	}
+}
