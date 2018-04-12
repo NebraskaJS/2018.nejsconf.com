@@ -1,0 +1,28 @@
+/* Global Style Guide */
+.sg-c > h1,
+.sg-c > h2,
+.sg-c > h3 {
+	text-transform: uppercase;
+}
+.sg-c > h2 {
+	margin-top: 5em;
+	margin-bottom: 1.5em;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Style Guide Widget */
+.sg-c {
+	padding-left: .5rem;
+	padding-right: .5rem;
+}
+.sg-c > :not(.sg-component-full) {
+	width: 100%;
+	max-width: 60rem; /* 960px /16 */
+	margin-left: auto;
+	margin-right: auto;
+}
+.sg-c > .sg-component-full {
+	margin-left: -.5rem;
+	margin-right: -.5rem;
+}

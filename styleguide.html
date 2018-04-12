@@ -1,5 +1,6 @@
 ---
 layout: layout.njk
+styleguide: true
 ---
 
 <div class="sg-c">
@@ -27,6 +28,7 @@ layout: layout.njk
 		<div class="hero">
 			<div class="hero-img"></div>
 			<div class="hero-title">
+				<img src="/assets/img/lander.svg" class="hero-title-lander" alt="Lander Module">
 				<h1 class="hero-title-text"><span>NEJS</span> <span>CONF</span> <span class="hero-title-year">2018</span></h1>
 			</div>
 		</div>
@@ -35,7 +37,37 @@ layout: layout.njk
 	<h2>Hero Quote</h2>
 
 	<div class="sg-component">
-		<p class="hero-quote">NEJS CONF is a single day, single track conference dedicated to Web Development and JavaScript.</p>
+		<div class="hero-quote-c">
+			<p class="hero-quote">NEJS CONF is a single day, single track conference dedicated to Web Development and JavaScript.</p>
+		</div>
+	</div>
+
+	<h2>Info Block Highlight</h2>
+	<div class="sg-component">
+		<h2 class="info-highlight">Omaha, Nebraska</h2>
+		<p>Paragraph text</p>
+	</div>
+
+	<h2>Info Block</h2>
+	<div class="sg-component">
+		<div class="info-block">
+			<h2 class="info-highlight">Omaha, Nebraska</h2>
+			<p>Paragraph text</p>
+		</div>
+	</div>
+
+	<h2>Info Block Group</h2>
+	<div class="sg-component">
+		<div class="info-block-group">
+			<div class="info-block">
+				<h2 class="info-highlight">Omaha, Nebraska</h2>
+				<p>Paragraph text</p>
+			</div>
+			<div class="info-block">
+				<h2 class="info-highlight">Omaha, Nebraska</h2>
+				<p>Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. </p>
+			</div>
+		</div>
 	</div>
 </div>
 <div style="height: 800px"></div>

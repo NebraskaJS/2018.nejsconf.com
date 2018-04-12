@@ -4,9 +4,10 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>NEJS CONF 2018{% if title %}—{{ title }}{% endif %}</title>
-		<style>
-		{% include "theme.css" %}
-		</style>
+		<style>{% include "theme.css" %}</style>
+{% if styleguide %}
+		<style>{% include "styleguide.css" %}</style>
+{% endif %}
 		<script>
 		// TypeKit
 		;(function( d ) {

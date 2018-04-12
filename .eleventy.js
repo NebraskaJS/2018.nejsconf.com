@@ -1,12 +1,12 @@
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("assets");
+
 	return {
 		templateFormats: [
       "md",
       "njk",
       "html",
       "jstl",
-      "png",
-      "jpg",
       "css"
     ],
     markdownTemplateEngine: "njk",
