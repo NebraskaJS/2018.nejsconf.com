@@ -10,6 +10,42 @@ body {
 	font-family: Effra, sans-serif;
 }
 
+/* Icons */
+.icon {
+}
+.icon:before {
+	content: "";
+	display: inline-block;
+	min-width: 60px;
+	min-height: 60px;
+	background-position: 50% 50%;
+	background-size: 60px 60px;
+	background-repeat: no-repeat;
+}
+.icon-moon:before {
+	background-image: url(/assets/img/moon.svg);
+}
+.icon-telescope:before {
+	background-image: url(/assets/img/telescope.svg);
+}
+.icon-facebook:before {
+	background-image: url(/assets/img/facebook.svg);
+}
+.icon-facebook:active:before,
+.icon-facebook:hover:before,
+.icon-facebook-active:before {
+	background-image: url(/assets/img/facebook-active.svg);
+}
+
+.icon-twitter:before {
+	background-image: url(/assets/img/twitter.svg);
+}
+.icon-twitter:active:before,
+.icon-twitter:hover:before,
+.icon-twitter-active:before {
+	background-image: url(/assets/img/twitter-active.svg);
+}
+
 /* Hero */
 .hero {
 	display: flex;
@@ -91,6 +127,7 @@ body {
 	padding: 6em 0;
 	border-top: 2px solid #29332d;
 	border-bottom: 2px solid #29332d;
+	margin-bottom: .5em;
 }
 .hero-quote {
 	position: relative;
@@ -101,23 +138,27 @@ body {
 	line-height: 1.5;
 }
 .hero-quote:before {
-	content: "";
-	display: inline-block;
 	float: left;
 	width: 3.666666666667em; /* 88px /24 */
-	min-height: 3em;
-	background-image: url(/assets/img/moon.png);
-	background-size: 60px 60px;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	min-height: 3em; /* 72px /24 */
 	margin-right: .5em;
 	margin-bottom: 0;
+}
+.hero-quote h1,
+.hero-quote h2,
+.hero-quote h3 {
+	margin: 0;
+	text-transform: uppercase;
+}
+.hero-quote p {
+	margin-top: 0;
 }
 @media (min-width: 400px) {
 	.hero-quote {
 		padding-left: 6.25em; /* 150px /24 */
 	}
 	.hero-quote:before {
+		content: "";
 		position: absolute;
 		left: 0;
 		top: -10px;
@@ -139,14 +180,86 @@ body {
 	margin-left: -0.3333333333333em; /* -8px /24 */
 }
 
+.info-highlight-b {
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 /* Info Block */
 .info-block-group {
 	display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 10px;
 }
 .info-block {
 	padding: 5em 3.5em;
 	color: #fff;
 	background-color: #29332d;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.info-block-spacewalk {
+	background-image: url(/assets/img/infoblock-astronaut.png);
+}
+.info-block-moon {
+	background-image: url(/assets/img/infoblock-moon.png);
+}
+
+@media (min-width: 768px) {
+	.info-block-group {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+/* Group Header */
+.group-hed {
+	font-size: 4.9375rem; /* 79px /16 */
+	font-weight: bold;
+	border-bottom: 9px solid #2b332d;
+	text-transform: uppercase;
+}
+.group-hed-r {
+	text-align: right;
+}
+
+/* Venue Image */
+.venue {
+	position: relative;
+}
+.venue-img {
+	display: block;
+	width: 100%;
+}
+.venue:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(/assets/img/space-bg.png);
+	background-color: #24302d;
+	z-index: -1;
+}
+
+/* Sponsors */
+.sponsors {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 50px 50px;
+}
+@media (min-width: 500px) {
+	.sponsors {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media (min-width: 768px) {
+	.sponsors {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+.sponsors-block {
+	border: 3px solid #2b332d;
+	min-width: 200px;
+	min-height: 200px;
 }

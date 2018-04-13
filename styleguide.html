@@ -6,6 +6,25 @@ styleguide: true
 <div class="sg-c">
 	<h1>Style Guide</h1>
 
+	<h2>Icons</h2>
+
+	<div class="sg-component">
+		<div class="icon icon-moon"></div>
+		<div class="icon icon-telescope"></div>
+		<div class="icon icon-twitter">Twitter</div>
+		<div class="icon icon-twitter-active">Twitter</div>
+		<div class="icon icon-facebook">Facebook</div>
+		<div class="icon icon-facebook-active">Facebook</div>
+	</div>
+
+	<h2>Grouping Header</h2>
+
+	<div class="sg-component">
+		<h2 class="group-hed">Speakers</h2>
+		<h2 class="group-hed group-hed-r">Schedule</h2>
+		<h2 class="group-hed">Venue</h2>
+	</div>
+
 	<h2>Hero</h2>
 
 	<h3>Space Background</h3>
@@ -38,17 +57,41 @@ styleguide: true
 
 	<div class="sg-component">
 		<div class="hero-quote-c">
-			<p class="hero-quote">NEJS CONF is a single day, single track conference dedicated to Web Development and JavaScript.</p>
+			<p class="hero-quote icon icon-moon">NEJS CONF is a single day, single track conference dedicated to Web Development and JavaScript.</p>
 		</div>
 	</div>
 
-	<h2>Info Block Highlight</h2>
+	<div class="sg-component">
+		<div class="hero-quote-c">
+			<div class="hero-quote">
+				<div class="hero-quote-icons">
+					<a href="#" class="icon icon-facebook">Facebook</a>
+					<a href="#" class="icon icon-twitter">Twitter</a>
+				</div>
+				<h3>Code of Conduct</h3>
+				<p>We want a safe environment for all of our staff, speakers, sponsors, and attendees. All conference participants must abide by our <a href="#">Code of Conduct</a>.</p>
+			</div>
+		</div>
+	</div>
+
+	<h2>Highlight</h2>
+
+	<h3>in an Info Block</h3>
 	<div class="sg-component">
 		<h2 class="info-highlight">Omaha, Nebraska</h2>
 		<p>Paragraph text</p>
 	</div>
 
-	<h2>Info Block</h2>
+	<h3>Schedule Date</h3>
+	<div class="sg-component">
+		<h2 class="info-highlight info-highlight-b">July 27</h2>
+		<p>Paragraph text</p>
+	</div>
+	
+
+	<h2>Info Blocks</h2>
+
+	<h3>Info Block (Single)</h3>
 	<div class="sg-component">
 		<div class="info-block">
 			<h2 class="info-highlight">Omaha, Nebraska</h2>
@@ -56,7 +99,8 @@ styleguide: true
 		</div>
 	</div>
 
-	<h2>Info Block Group</h2>
+	<h3>Info Block Group</h3>
+	<p>All blocks in the same row should have the same height.</p>
 	<div class="sg-component">
 		<div class="info-block-group">
 			<div class="info-block">
@@ -67,6 +111,39 @@ styleguide: true
 				<h2 class="info-highlight">Omaha, Nebraska</h2>
 				<p>Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. </p>
 			</div>
+		</div>
+	</div>
+
+	<h3>Info Block Group (Background Images)</h3>
+	<div class="sg-component">
+		<div class="info-block-group">
+			<div class="info-block info-block-spacewalk">
+				<h2 class="info-highlight">Omaha, Nebraska</h2>
+				<p>Paragraph text</p>
+			</div>
+			<div class="info-block info-block-moon">
+				<h2 class="info-highlight">Omaha, Nebraska</h2>
+				<p>Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. </p>
+			</div>
+		</div>
+	</div>
+
+	<h2>Venue Image</h2>
+	<div class="sg-component-full">
+		<div class="venue">
+			<img src="/assets/img/holland.png" alt="Holland Center for Performing Arts" class="venue-img">
+		</div>
+	</div>
+
+	<h2>Sponsor Blocks</h2>
+	<div class="sg-component">
+		<div class="sponsors">
+			<div class="sponsors-block"></div>
+			<div class="sponsors-block"></div>
+			<div class="sponsors-block"></div>
+			<div class="sponsors-block"></div>
+			<div class="sponsors-block"></div>
+			<div class="sponsors-block"></div>
 		</div>
 	</div>
 </div>
