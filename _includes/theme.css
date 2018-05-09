@@ -44,27 +44,27 @@ span.icon {
 	pointer-events: all;
 }
 .icon-moon:before {
-	background-image: url(/assets/img/moon.svg);
+	background-image: url(/preview/assets/img/moon.svg);
 }
 .icon-telescope:before {
-	background-image: url(/assets/img/telescope.svg);
+	background-image: url(/preview/assets/img/telescope.svg);
 }
 .icon-facebook:before {
-	background-image: url(/assets/img/facebook.svg);
+	background-image: url(/preview/assets/img/facebook.svg);
 }
 .icon-facebook:active:before,
 .icon-facebook:hover:before,
 .icon-facebook-active:before {
-	background-image: url(/assets/img/facebook-active.svg);
+	background-image: url(/preview/assets/img/facebook-active.svg);
 }
 
 .icon-twitter:before {
-	background-image: url(/assets/img/twitter.svg);
+	background-image: url(/preview/assets/img/twitter.svg);
 }
 .icon-twitter:active:before,
 .icon-twitter:hover:before,
 .icon-twitter-active:before {
-	background-image: url(/assets/img/twitter-active.svg);
+	background-image: url(/preview/assets/img/twitter-active.svg);
 }
 
 /* Hero */
@@ -72,14 +72,14 @@ span.icon {
 	display: flex;
 	justify-content: flex-start;
 	position: relative;
-	background-image: url(/assets/img/space-bg.png);
+	background-image: url(/preview/assets/img/space-bg.png);
 	background-color: #2b332d;
 	margin-bottom: 1.25em;
 }
 .hero-img {
 	width: 60%;
 	max-width: 28.125rem; /* 450px /16 */
-	background-image: url(/assets/img/earth-nobg-crop.png);
+	background-image: url(/preview/assets/img/earth-nobg-crop.png);
 	background-size: cover;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
@@ -262,10 +262,10 @@ span.icon {
 	color: inherit;
 }
 .info-block-spacewalk {
-	background-image: url(/assets/img/infoblock-astronaut.png);
+	background-image: url(/preview/assets/img/infoblock-astronaut.png);
 }
 .info-block-moon {
-	background-image: url(/assets/img/infoblock-moon.png);
+	background-image: url(/preview/assets/img/infoblock-moon.png);
 }
 
 @media (min-width: 768px) {
@@ -316,7 +316,7 @@ span.icon {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(/assets/img/space-bg.png);
+	background-image: url(/preview/assets/img/space-bg.png);
 	background-color: #2b332d;
 	z-index: -1;
 }
