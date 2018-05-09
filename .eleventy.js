@@ -12,6 +12,7 @@ module.exports = function(eleventyConfig) {
 		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "false",
-		passthroughFileCopy: true
+		passthroughFileCopy: true,
+		pathPrefix: "/preview/"
 	};
 };
