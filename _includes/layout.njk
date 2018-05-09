@@ -5,9 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>NEJS CONF 2018{% if title %}—{{ title }}{% endif %}</title>
 		<style>{% include "theme.css" %}</style>
-{% if styleguide %}
 		<style>{% include "styleguide.css" %}</style>
-{% endif %}
 		<script>
 		// TypeKit
 		;(function( d ) {
@@ -20,6 +18,17 @@
 		</script>
 	</head>
 	<body>
+		<div class="sg-c">
+			<div class="sg-component-full">
+				<div class="hero">
+					<div class="hero-img"></div>
+					<div class="hero-title">
+						<img src="/assets/img/lander.svg" class="hero-title-lander" alt="Lander Module">
+						<h1 class="hero-title-text"><span>NEJS</span> <span>CONF</span> <span class="hero-title-year">2018</span></h1>
+					</div>
+				</div>
+			</div>
+		</div>
 		{{ content | safe }}
 	</body>
 </html>

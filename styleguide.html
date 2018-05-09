@@ -6,15 +6,27 @@ styleguide: true
 <div class="sg-c">
 	<h1>Style Guide</h1>
 
+	<h2>Colors</h2>
+	<div class="sg-component">
+		<span class="icon yellow"></span>
+		<span class="icon dark-gray"></span>
+		<span class="icon dark-gray-b"></span>
+	</div>
+	
 	<h2>Icons</h2>
 
 	<div class="sg-component">
-		<div class="icon icon-moon"></div>
-		<div class="icon icon-telescope"></div>
-		<div class="icon icon-twitter">Twitter</div>
-		<div class="icon icon-twitter-active">Twitter</div>
-		<div class="icon icon-facebook">Facebook</div>
-		<div class="icon icon-facebook-active">Facebook</div>
+		<span class="icon icon-moon"></span>
+		<span class="icon icon-telescope"></span>
+		<span class="icon icon-twitter" aria-label="Twitter"></span>
+		<span class="icon icon-twitter-active" aria-label="Twitter"></span>
+		<span class="icon icon-facebook" aria-label="Facebook"></span>
+		<span class="icon icon-facebook-active" aria-label="Facebook"></span>
+	</div>
+
+	<h3>Block Icon</h3>
+	<div class="sg-component">
+		<a href="https://twitter.com/nejsconf" class="icon icon-block icon-twitter" aria-label="Twitter"></a>
 	</div>
 
 	<h2>Grouping Header</h2>
@@ -63,11 +75,15 @@ styleguide: true
 
 	<div class="sg-component">
 		<div class="hero-quote-c">
+			<div class="hero-quote icon icon-telescope">
+				<p>The 300-seat capacity Suzanne and Walter Scott Recital Hall in the <a href="https://omahaperformingarts.org/our-venues/holland">Holland Performing Arts Center</a> makes every event feel casually sophisticated, with incredible black box acoustics and unique lighting options.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="sg-component">
+		<div class="hero-quote-c">
 			<div class="hero-quote">
-				<div class="hero-quote-icons">
-					<a href="#" class="icon icon-facebook">Facebook</a>
-					<a href="#" class="icon icon-twitter">Twitter</a>
-				</div>
 				<h3>Code of Conduct</h3>
 				<p>We want a safe environment for all of our staff, speakers, sponsors, and attendees. All conference participants must abide by our <a href="#">Code of Conduct</a>.</p>
 			</div>
@@ -119,10 +135,10 @@ styleguide: true
 		<div class="info-block-group">
 			<div class="info-block info-block-spacewalk">
 				<h2 class="info-highlight">Omaha, Nebraska</h2>
-				<p>Paragraph text</p>
+				<p>Paragraph text. <a href="#">This is a link.</a></p>
 			</div>
 			<div class="info-block info-block-moon">
-				<h2 class="info-highlight">Omaha, Nebraska</h2>
+				<h2 class="info-highlight">Conference Passes Include:</h2>
 				<p>Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. Longer paragraph text. </p>
 			</div>
 		</div>
@@ -138,8 +154,8 @@ styleguide: true
 	<h2>Sponsor Blocks</h2>
 	<div class="sg-component">
 		<div class="sponsors">
-			<div class="sponsors-block"></div>
-			<div class="sponsors-block"></div>
+			<div class="sponsors-block"><img src="/assets/img/sponsors/agape-red.svg" alt="Agape Red"></div>
+			<div class="sponsors-block"><a href="mailto:sponsor@nejsconf.com">Sponsor NEJS CONF!</a></div>
 			<div class="sponsors-block"></div>
 			<div class="sponsors-block"></div>
 			<div class="sponsors-block"></div>
