@@ -13,6 +13,6 @@ module.exports = function(eleventyConfig) {
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "false",
 		passthroughFileCopy: true,
-		pathPrefix: "/"
+		pathPrefix: "/preview/"
 	};
 };
