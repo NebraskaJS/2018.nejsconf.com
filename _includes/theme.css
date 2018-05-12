@@ -71,7 +71,7 @@ span.icon {
 	position: relative;
 	background-image: url(/assets/img/space-bg.png);
 	background-color: #2b332d;
-	margin-bottom: 1.25em;
+	margin-bottom: 2rem; /* 32px /16 */
 	min-height: 80vh;
 }
 .hero-img {
@@ -143,7 +143,7 @@ span.icon {
 	padding: 6em 0;
 	border-top: 2px solid #2b332d;
 	border-bottom: 2px solid #2b332d;
-	margin-bottom: 1.25em;
+	margin-bottom: 2rem; /* 32px /16 */
 }
 .hero-quote-c-coc {
 	border: 0;
@@ -296,7 +296,7 @@ span.icon {
 	width: 100%;
 	min-height: 40vh;
 	overflow: hidden;
-	margin-bottom: 1.25em;
+	margin-bottom: 2rem; /* 32px /16 */
 }
 .venue-img {
 	display: block;

@@ -18,7 +18,7 @@
 }
 .sg-c > :not(.sg-component-full) {
 	width: 100%;
-	max-width: 60rem; /* 960px /16 */
+	max-width: 70rem; /* 1120px /16 */
 	margin-left: auto;
 	margin-right: auto;
 }
