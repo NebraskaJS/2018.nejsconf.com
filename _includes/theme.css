@@ -4,9 +4,6 @@ body {
 	margin: 0;
 	padding: 0;
 }
- {
-	font-size: 1.25em;
-}
 
 /* Web Fonts */
 .wf-effra-i9-active body {
@@ -44,27 +41,27 @@ span.icon {
 	pointer-events: all;
 }
 .icon-moon:before {
-	background-image: url(/preview/assets/img/moon.svg);
+	background-image: url(/assets/img/moon.svg);
 }
 .icon-telescope:before {
-	background-image: url(/preview/assets/img/telescope.svg);
+	background-image: url(/assets/img/telescope.svg);
 }
 .icon-facebook:before {
-	background-image: url(/preview/assets/img/facebook.svg);
+	background-image: url(/assets/img/facebook.svg);
 }
 .icon-facebook:active:before,
 .icon-facebook:hover:before,
 .icon-facebook-active:before {
-	background-image: url(/preview/assets/img/facebook-active.svg);
+	background-image: url(/assets/img/facebook-active.svg);
 }
 
 .icon-twitter:before {
-	background-image: url(/preview/assets/img/twitter.svg);
+	background-image: url(/assets/img/twitter.svg);
 }
 .icon-twitter:active:before,
 .icon-twitter:hover:before,
 .icon-twitter-active:before {
-	background-image: url(/preview/assets/img/twitter-active.svg);
+	background-image: url(/assets/img/twitter-active.svg);
 }
 
 /* Hero */
@@ -72,14 +69,15 @@ span.icon {
 	display: flex;
 	justify-content: flex-start;
 	position: relative;
-	background-image: url(/preview/assets/img/space-bg.png);
+	background-image: url(/assets/img/space-bg.png);
 	background-color: #2b332d;
 	margin-bottom: 1.25em;
+	min-height: 80vh;
 }
 .hero-img {
 	width: 60%;
-	max-width: 28.125rem; /* 450px /16 */
-	background-image: url(/preview/assets/img/earth-nobg-crop.png);
+	max-width: 34.375rem; /* 550px /16 */
+	background-image: url(/assets/img/earth-nobg-crop.png);
 	background-size: cover;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
@@ -87,8 +85,7 @@ span.icon {
 .hero-title {
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+	flex-direction: column;
 	flex: 1;
 	padding: 3.5em 1.5em;
 	z-index: 2;
@@ -127,9 +124,6 @@ span.icon {
 	margin-bottom: 0;
 }
 @media (max-width: 47.9375em) { /* 767px */
-	.hero-img {
-		width: 40%;
-	}
 	.hero-title-lander {
 		height: 5em;
 	}
@@ -262,10 +256,10 @@ span.icon {
 	color: inherit;
 }
 .info-block-spacewalk {
-	background-image: url(/preview/assets/img/infoblock-astronaut.png);
+	background-image: url(/assets/img/infoblock-astronaut.png);
 }
 .info-block-moon {
-	background-image: url(/preview/assets/img/infoblock-moon.png);
+	background-image: url(/assets/img/infoblock-moon.png);
 }
 
 @media (min-width: 768px) {
@@ -316,7 +310,7 @@ span.icon {
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background-image: url(/preview/assets/img/space-bg.png);
+	background-image: url(/assets/img/space-bg.png);
 	background-color: #2b332d;
 	z-index: -1;
 }
