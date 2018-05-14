@@ -1,5 +1,16 @@
+const CleanCSS = require('clean-css');
+const UglifyJS = require("uglify-js");
+
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets");
+
+	eleventyConfig.addFilter("cssmin", function(code) {
+		return new CleanCSS({}).minify(code).styles;
+	});
+
+	eleventyConfig.addFilter("jsmin", function(code) {
+		return UglifyJS.minify(code).code;
+	});
 
 	return {
 		templateFormats: [
@@ -13,6 +24,6 @@ module.exports = function(eleventyConfig) {
 		htmlTemplateEngine: "njk",
 		dataTemplateEngine: "false",
 		passthroughFileCopy: true,
-		pathPrefix: "/preview/"
+		pathPrefix: "/"
 	};
 };
