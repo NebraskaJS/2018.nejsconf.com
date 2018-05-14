@@ -12,7 +12,7 @@
   "author": "Zach Leatherman",
   "license": "MIT",
   "dependencies": {
-    "@11ty/eleventy": "file:../eleventy",
+    "@11ty/eleventy": "^0.3.4",
     "clean-css": "^4.1.11",
     "uglify-js": "^3.3.25"
   }
