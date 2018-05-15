@@ -74,6 +74,9 @@ span.icon {
 	margin-bottom: 2rem; /* 32px /16 */
 	min-height: 80vh;
 }
+.hero-sm {
+	min-height: 0;
+}
 .hero-img {
 	width: 60%;
 	max-width: 34.375rem; /* 550px /16 */
