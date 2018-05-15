@@ -11,12 +11,12 @@ layout: layout.njk
 
 	<div class="sg-component">
 		<div class="info-block-group">
-			<div class="info-block info-block-spacewalk">
+			<div class="info-block info-block-spacewalk lazy">
 				<h2 class="info-highlight">Friday July 27, 2018</h2>
 				<p>Omaha, Nebraska</p>
 				<p>Scott Recital Hall in the <a href="https://omahaperformingarts.org/our-venues/holland">Holland Performing Arts Center</a></p>
 			</div>
-			<div class="info-block info-block-moon">
+			<div class="info-block info-block-moon lazy">
 				<h2 class="info-highlight">Conference Passes Include:</h2>
 				<ul>
 					<li>Nine amazing speakers</li>
@@ -54,7 +54,7 @@ layout: layout.njk
 	</div>
 	<div class="sg-component-full">
 		<div class="venue">
-			<img src="{{ "/assets/img/holland.png" | url }}" alt="Holland Center for Performing Arts" class="venue-img">
+			<st-img src="{{ "/assets/img/holland.png" | url }}" alt="Holland Center for Performing Arts" class="venue-img"></st-img>
 		</div>
 	</div>
 	<div class="sg-component">
@@ -67,8 +67,8 @@ layout: layout.njk
 
 	<div class="sg-component">
 		<div class="sponsors">
-			<div class="sponsors-block"><a href="https://agapered.com/"><img src="{{ "/assets/img/sponsors/agape-red.svg" | url }}" alt="Agape Red"></a></div>
-			<div class="sponsors-block"><a href="https://getflywheel.com/"><img src="{{ "/assets/img/sponsors/flywheel.svg" | url }}" alt="Flywheel"></a></div>
+			<div class="sponsors-block"><a href="https://agapered.com/"><st-img src="{{ "/assets/img/sponsors/agape-red.svg" | url }}" alt="Agape Red"></st-img></a></div>
+			<div class="sponsors-block"><a href="https://getflywheel.com/"><st-img src="{{ "/assets/img/sponsors/flywheel.svg" | url }}" alt="Flywheel"></st-img></a></div>
 			<div class="sponsors-block"><a href="mailto:sponsor@nejsconf.com">Sponsor NEJS CONF!</a></div>
 		</div>
 	</div>

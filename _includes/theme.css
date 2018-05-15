@@ -30,7 +30,7 @@ span.icon {
 	text-align: center;
 	pointer-events: none;
 }
-.icon:before {
+.icon::before {
 	content: "";
 	display: inline-block;
 	min-width: 60px;
@@ -40,27 +40,27 @@ span.icon {
 	background-repeat: no-repeat;
 	pointer-events: all;
 }
-.icon-moon:before {
+.icon-moon::before {
 	background-image: url({{ "/assets/img/moon.svg" | url }});
 }
-.icon-telescope:before {
+.icon-telescope::before {
 	background-image: url({{ "/assets/img/telescope.svg" | url }});
 }
-.icon-facebook:before {
+.icon-facebook::before {
 	background-image: url({{ "/assets/img/facebook.svg" | url }});
 }
-.icon-facebook:active:before,
-.icon-facebook:hover:before,
-.icon-facebook-active:before {
+.icon-facebook:active::before,
+.icon-facebook:hover::before,
+.icon-facebook-active::before {
 	background-image: url({{ "/assets/img/facebook-active.svg" | url }});
 }
 
-.icon-twitter:before {
+.icon-twitter::before {
 	background-image: url({{ "/assets/img/twitter.svg" | url }});
 }
-.icon-twitter:active:before,
-.icon-twitter:hover:before,
-.icon-twitter-active:before {
+.icon-twitter:active::before,
+.icon-twitter:hover::before,
+.icon-twitter-active::before {
 	background-image: url({{ "/assets/img/twitter-active.svg" | url }});
 }
 
@@ -80,10 +80,13 @@ span.icon {
 .hero-img {
 	width: 60%;
 	max-width: 34.375rem; /* 550px /16 */
-	background-image: url({{ "/assets/img/earth-nobg-crop.png" | url }});
+	background-image: url({{ "/assets/img/earth-nobg-crop-thumb.png" | url }});
 	background-size: cover;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
+}
+.hero-img.load {
+	background-image: url({{ "/assets/img/earth-nobg-crop.png" | url }});
 }
 .hero-title {
 	display: flex;
@@ -164,7 +167,7 @@ span.icon {
 	padding-left: 2em;
 }
 .hero-quote > a[href].icon,
-.hero-quote:before {
+.hero-quote::before {
 	content: "";
 	position: absolute;
 	left: 8px;
@@ -176,7 +179,7 @@ span.icon {
 	top: 50%;
 	transform: translateY(-50%);
 }
-.hero-quote:before {
+.hero-quote::before {
 	top: 0;
 	border-right: 8px solid #231f20;
 	min-width: 0;
@@ -197,9 +200,9 @@ span.icon {
 		bottom: 0;
 		transform: translate(-50%, 150%);
 	}
-	.hero-quote:before,
-	.hero-quote:hover:before,
-	.hero-quote:active:before {
+	.hero-quote::before,
+	.hero-quote:hover::before,
+	.hero-quote:active::before {
 		background-image: none;
 	}
 }
@@ -207,7 +210,7 @@ span.icon {
 	.hero-quote {
 		padding-left: 6.25em; /* 150px /24 */
 	}
-	.hero-quote:before {
+	.hero-quote::before {
 		left: 0;
 		top: -10px;
 		bottom: -10px;
@@ -262,9 +265,15 @@ span.icon {
 	color: inherit;
 }
 .info-block-spacewalk {
-	background-image: url({{ "/assets/img/infoblock-astronaut.png" | url }});
+	background-image: url({{ "/assets/img/infoblock-astronaut-thumb.png" | url }});
 }
 .info-block-moon {
+	background-image: url({{ "/assets/img/infoblock-moon-thumb.png" | url }});
+}
+.info-block-spacewalk.load {
+	background-image: url({{ "/assets/img/infoblock-astronaut.png" | url }});
+}
+.info-block-moon.load {
 	background-image: url({{ "/assets/img/infoblock-moon.png" | url }});
 }
 
@@ -309,7 +318,7 @@ span.icon {
 	width: 130%;
 	height: 130%;
 }
-.venue:before {
+.venue::before {
 	content: "";
 	position: absolute;
 	left: 0;
