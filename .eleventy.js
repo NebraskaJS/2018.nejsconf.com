@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
 		],
 		markdownTemplateEngine: "njk",
 		htmlTemplateEngine: "njk",
-		dataTemplateEngine: "false",
+		dataTemplateEngine: false,
 		passthroughFileCopy: true,
 		pathPrefix: "/"
 	};
