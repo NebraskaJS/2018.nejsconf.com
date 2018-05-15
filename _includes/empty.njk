@@ -6,10 +6,15 @@
 		<title>NEJS CONF 2018{% if title %}—{{ title }}{% endif %}</title>
 {% set css %}{% include "theme.css" %}{% endset %}
 {% set js %}{% include "script.js" %}{% endset %}
+		<link rel="preload" href="/assets/img/earth-nobg-crop.png" as="image" />
 		<style>{{ css | cssmin | safe }}</style>
 		<script>{{ js | jsmin | safe }}</script>
 	</head>
 	<body>
 		{{ content | safe }}
+
+{% set images %}{% include "images.js" %}{% endset %}
+		<script>{{ images | jsmin | safe }}</script>
+		<script async defer src="https://unpkg.com/st-img@0.3.0/dist/stimg.js"></script>
 	</body>
 </html>
