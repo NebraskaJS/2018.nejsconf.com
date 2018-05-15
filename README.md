@@ -6,8 +6,8 @@
 npm install
 ```
 
-## Run the build
+## Local testing
 
 ```
-npx eleventy --watch
+npx eleventy --serve
 ```
