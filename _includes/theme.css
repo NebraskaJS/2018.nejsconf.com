@@ -315,8 +315,11 @@ span.icon {
 }
 .venue-img {
 	display: block;
-	width: 130%;
-	height: 130%;
+	margin: 0 auto;
+	max-width: 1120px;
+}
+.venue-img img {
+	width: 100%;
 }
 .venue::before {
 	content: "";
@@ -328,12 +331,6 @@ span.icon {
 	background-image: url({{ "/assets/img/space-bg.png" | url }});
 	background-color: #2b332d;
 	z-index: -1;
-}
-@media (min-width: 25em) { /* 400px */
-	.venue-img {
-		width: 100%;
-		height: 100%;
-	}
 }
 
 /* Sponsors */
