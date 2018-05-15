@@ -123,6 +123,9 @@ span.icon {
 	display: inline-block;
 	margin-bottom: 0;
 }
+.hero-register {
+	text-align: center;
+}
 @media (max-width: 47.9375em) { /* 767px */
 	.hero-title-lander {
 		height: 5em;
@@ -393,4 +396,47 @@ span.icon {
 }
 .sg-c-coc p {
 	font-size: 1.25em;
+}
+.sg-component-dark {
+	background-color: #222;
+}
+
+/* Primary Button */
+.btn-primary {
+	background: #fff;
+	color: #231f20;
+	padding: .5em 4vw .45em;
+	text-transform: uppercase;
+	border: none;
+	border-radius: 1.5em;
+	font-size: 1.416666666667em; /* 34px /24 */
+	display: inline-block;
+	margin: .5em auto;
+	text-decoration: none;
+	text-align: center;
+	white-space: nowrap;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+	background-color: rgba(255,255,255,.04);
+	color: #fff;
+}
+.btn-primary-light:hover,
+.btn-primary-light:focus {
+	background-color: rgba(0,0,0,.04);
+	color: #231f20;
+}
+.btn-primary-light {
+	border: 2px solid;
+}
+.btn-primary span {
+	display: none;
+	font-size: 0.5294117647059em; /* 18px /34 */
+	font-weight: 400;
+	margin-top: -.25em;
+}
+@media (min-width: 50em) { /* 800px */
+	.btn-primary span {
+		display: block;
+	}
 }
