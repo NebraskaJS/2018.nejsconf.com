@@ -13,6 +13,7 @@ if ('IntersectionObserver' in window) {
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			if (entry.intersectionRatio > 0) {
+				// TODO I wish this class applied after the images loaded
 				entry.target.classList.add('load');
 				srcsetUpdate(entry.target);
 				observer.unobserve(entry.target);
