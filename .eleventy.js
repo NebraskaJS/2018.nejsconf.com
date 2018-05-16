@@ -9,7 +9,13 @@ module.exports = function(eleventyConfig) {
 	});
 
 	eleventyConfig.addFilter("jsmin", function(code) {
-		return UglifyJS.minify(code).code;
+		let minified = UglifyJS.minify(code);
+		if( minified.error ) {
+			console.log("UglifyJS error: ", minified.error);
+			return code;
+		}
+
+		return minified.code;
 	});
 
 	return {

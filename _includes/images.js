@@ -2,7 +2,7 @@
 var images = Array.prototype.slice.call(document.querySelectorAll('.lazy'));
 
 function srcsetUpdate( el ) {
-	let srcset = el.getAttribute("data-srcset");
+	var srcset = el.getAttribute("data-srcset");
 	if( srcset ) {
 		el.removeAttribute("data-srcset");
 		el.setAttribute("srcset", srcset);
@@ -10,8 +10,8 @@ function srcsetUpdate( el ) {
 }
 
 if ('IntersectionObserver' in window) {
-	const observer = new IntersectionObserver(entries => {
-		entries.forEach(entry => {
+	var observer = new IntersectionObserver(function(entries) {
+		entries.forEach(function(entry) {
 			if (entry.intersectionRatio > 0) {
 				// TODO I wish this class applied after the images loaded
 				entry.target.classList.add('load');
@@ -21,11 +21,11 @@ if ('IntersectionObserver' in window) {
 		});
 	});
 
-	images.forEach(image => {
+	images.forEach(function(image) {
 		observer.observe(image);
 	});
 } else {
-	images.forEach(image => {
+	images.forEach(function(image) {
 		image.target.classList.add('load');
 		srcsetUpdate(image.target);
 	});
