@@ -26,7 +26,7 @@ if ('IntersectionObserver' in window) {
 	});
 } else {
 	images.forEach(function(image) {
-		image.target.classList.add('load');
-		srcsetUpdate(image.target);
+		image.classList.add('load');
+		srcsetUpdate(image);
 	});
 }
