@@ -4,7 +4,9 @@
   "private": true,
   "description": "Web site for NEJS CONF 2018",
   "scripts": {
-    "test": "npm run test"
+    "test": "npm run test",
+    "build": "npx eleventy",
+    "deploy": "rm -rf _site; npm run build; echo \"Note: Requires an 'nejsconf2018' host in .ssh/config\"; rsync --archive --verbose --stats --compress --rsh=ssh ./_site/ nejsconf2018:/home/public/"
   },
   "keywords": [
     "NEJS CONF"
