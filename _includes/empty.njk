@@ -13,8 +13,7 @@
 	<body>
 		{{ content | safe }}
 
-{% set images %}{% include "images.js" %}{% endset %}
-		<script>{{ images | jsmin | safe }}</script>
-		<script async defer src="https://unpkg.com/st-img@0.3.0/dist/stimg.js"></script>
+{% set imgJs %}{% include "images.js" %}{% endset %}
+		<script>{{ imgJs | safe }}</script>
 	</body>
 </html>

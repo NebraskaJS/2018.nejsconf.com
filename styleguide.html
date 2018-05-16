@@ -81,25 +81,13 @@ styleguide: true
 	<h3>Combination (Full Size)</h3>
 
 	<div class="sg-component-full">
-		<div class="hero">
-			<div class="hero-img"></div>
-			<div class="hero-title">
-				<img src="{{ "/assets/img/lander.svg" | url }}" class="hero-title-lander" alt="Lander Module">
-				<h1 class="hero-title-text"><span>NEJS</span> <span>CONF</span> <span class="hero-title-year">2018</span></h1>
-			</div>
-		</div>
+		{% include "components/hero.njk" %}
 	</div>
 
 	<h3>Combination (Shorter Height for Registration Page)</h3>
 
 	<div class="sg-component-full">
-		<div class="hero hero-sm">
-			<div class="hero-img"></div>
-			<div class="hero-title">
-				<img src="{{ "/assets/img/lander.svg" | url }}" class="hero-title-lander" alt="Lander Module">
-				<h1 class="hero-title-text"><span>NEJS</span> <span>CONF</span> <span class="hero-title-year">2018</span></h1>
-			</div>
-		</div>
+		{% include "components/hero-sm.njk" %}
 	</div>
 
 	<h2>Hero Quote</h2>
@@ -184,20 +172,16 @@ styleguide: true
 	<h2>Venue Image</h2>
 	<div class="sg-component-full">
 		<div class="venue">
-			<img src="{{ "/assets/img/holland.png" | url }}" alt="Holland Center for Performing Arts" class="venue-img">
+			<img src="{{ "/assets/img/holland-thumb.png" | url }}" alt="Holland Center for Performing Arts" class="venue-img lazy" data-srcset="{{ "/assets/img/holland@640.png" | url }} 640w, {{ "/assets/img/holland@1120.png" | url }} 1120w" sizes="(min-width: 1120px) 1120px">
+			<noscript>
+				<img src="{{ "/assets/img/holland@640.png" | url }}" alt="Holland Center for Performing Arts" class="venue-img" srcset="{{ "/assets/img/holland@640.png" | url }} 640w, {{ "/assets/img/holland@1120.png" | url }} 1120w" sizes="(min-width: 1120px) 1120px">
+			</noscript>
 		</div>
 	</div>
 
 	<h2>Sponsor Blocks</h2>
 	<div class="sg-component">
-		<div class="sponsors">
-			<div class="sponsors-block"><img src="{{ "/assets/img/sponsors/agape-red.svg" | url }}" alt="Agape Red"></div>
-			<div class="sponsors-block"><img src="{{ "/assets/img/sponsors/flywheel.svg" | url }}" alt="Flywheel"></div>
-			<div class="sponsors-block"><a href="mailto:sponsor@nejsconf.com">Sponsor NEJS CONF!</a></div>
-			<div class="sponsors-block"></div>
-			<div class="sponsors-block"></div>
-			<div class="sponsors-block"></div>
-		</div>
+		{% include "components/sponsors.njk" %}
 	</div>
 </div>
 <div style="height: 800px"></div>

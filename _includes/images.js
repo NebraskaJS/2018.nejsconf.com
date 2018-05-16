@@ -1,11 +1,20 @@
 // Intersection Observer
-const images = Array.prototype.slice.call(document.querySelectorAll('.lazy'));
+var images = Array.prototype.slice.call(document.querySelectorAll('.lazy'));
+
+function srcsetUpdate( el ) {
+	let srcset = el.getAttribute("data-srcset");
+	if( srcset ) {
+		el.removeAttribute("data-srcset");
+		el.setAttribute("srcset", srcset);
+	}
+}
 
 if ('IntersectionObserver' in window) {
 	const observer = new IntersectionObserver(entries => {
 		entries.forEach(entry => {
 			if (entry.intersectionRatio > 0) {
 				entry.target.classList.add('load');
+				srcsetUpdate(entry.target);
 				observer.unobserve(entry.target);
 			}
 		});
@@ -17,5 +26,6 @@ if ('IntersectionObserver' in window) {
 } else {
 	images.forEach(image => {
 		image.target.classList.add('load');
+		srcsetUpdate(image.target);
 	});
 }

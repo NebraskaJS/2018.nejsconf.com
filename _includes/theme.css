@@ -80,13 +80,10 @@ span.icon {
 .hero-img {
 	width: 60%;
 	max-width: 34.375rem; /* 550px /16 */
-	background-image: url({{ "/assets/img/earth-nobg-crop-thumb.png" | url }});
+	background-image: url({{ "/assets/img/earth-nobg-crop.png" | url }});
 	background-size: cover;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
-}
-.hero-img.load {
-	background-image: url({{ "/assets/img/earth-nobg-crop.png" | url }});
 }
 .hero-title {
 	display: flex;
@@ -307,21 +304,16 @@ span.icon {
 	position: relative;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
 	width: 100%;
-	min-height: 40vh;
 	overflow: hidden;
 	margin-bottom: 2rem; /* 32px /16 */
 }
 .venue-img {
+	max-width: 70em;
 	display: block;
-	margin: 0 auto;
-	max-width: 1120px;
-}
-.venue-img img {
 	width: 100%;
 }
-.venue::before {
+.venue:before {
 	content: "";
 	position: absolute;
 	left: 0;
