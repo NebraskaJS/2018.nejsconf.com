@@ -442,3 +442,128 @@ span.icon {
 		display: block;
 	}
 }
+
+/* Speakers */
+.speaker {
+	display: block;
+	border: 2px solid #231f20;
+	padding: 15%;
+	position: relative;
+	z-index: 0;
+	max-width: 23em;
+	margin: 0 auto 8%;
+	text-decoration: none;
+	transition: filter .6s ease-in-out;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+}
+.speaker,
+.speaker:visited {
+	color: #000;
+}
+.speaker:focus,
+.speaker:hover {
+	-webkit-filter: grayscale(0%);
+	filter: grayscale(0%);
+	color: #fff;
+}
+.speaker:before,
+.speaker:after {
+	content: "";
+	position: absolute;
+	background-color: #fff;
+	z-index: -1;
+}
+.speaker:after {
+	transition: width 1s;
+}
+.speaker:before {
+	top: -2px;
+	right: -2px;
+	width: 50%;
+	height: 60%;
+}
+.speaker:after {
+	bottom: -2px;
+	left: -2px;
+	width: 60%;
+	height: 2%;
+}
+.speaker.speaker:focus:before,
+.speaker.speaker:hover:before,
+.speaker.speaker:focus:after,
+.speaker.speaker:hover:after {
+	background-color: #231f20;
+	background-image: url({{ "/assets/img/space-bg.png" | url }});
+	width: 0;
+	height: 0;
+}
+.speaker.speaker:focus:after,
+.speaker.speaker:hover:after {
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+}
+.speaker-img {
+	border-radius: 50%;
+	width: 100%;
+}
+.speaker-name {
+	border-top: 10px solid;
+	font-weight: 900;
+	padding-top: .5em;
+	font-size: 1.625em; /* 26px /16 */
+}
+.speaker-talk {
+	font-weight: 400;
+	font-size: 1.125em; /* 18px /16 */
+}
+
+/* Speakers Grid */
+.speakers {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 100px 100px;
+	margin: 7em 0 3em;
+}
+.speaker:nth-child(4n+2):before {
+	left: -2px;
+	right: auto;
+	width: 50%;
+	height: 2px;
+}
+.speaker:nth-child(4n+2):after {
+	left: auto;
+	right: -2px;
+	width: 45%;
+	height: 90%;
+}
+.speaker:nth-child(4n+3):before {
+	width: calc(100% + 2px);
+	height: 30%;
+}
+.speaker:nth-child(4n+3):after {
+	width: calc(100% + 2px);
+	height: 3%;
+}
+.speaker:nth-child(4n+4):before {
+	width: 70%;
+	height: 2px;
+}
+.speaker:nth-child(4n+4):after {
+	width: 40%;
+	height: 70%;
+}
+@media (min-width: 800px) {
+	.speakers {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.speakers .speaker {
+		max-width: none;
+	}
+	.speakers .speaker:nth-child(2n+1) {
+		top: -3vw;
+	}
+	.speakers .speaker:nth-child(2n) {
+		bottom: -3vw;
+	}
+}

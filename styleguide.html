@@ -174,9 +174,24 @@ skipHero: true
 		{% include "components/venue.njk" %}
 	</div>
 
-	<h2>Sponsor Blocks</h2>
+	<h2>Sponsors Grid</h2>
 	<div class="sg-component">
 		{% include "components/sponsors.njk" %}
+	</div>
+
+	<h2>Speakers</h2>
+	<h3>Speaker Block</h3>
+	<div class="sg-component">
+		<a href="#" class="speaker">
+			<img src="/assets/img/speakers/zachleat.png" alt="Zach Leatherman" class="speaker-img">
+			<h2 class="speaker-name">Zach Leatherman</h2>
+			<p class="speaker-talk">Ugh, how much can this dude talk about Web Fonts? (This is not a real talk—just a sample for the Style Guide)</p>
+		</a>
+	</div>
+
+	<h3>Speakers Grid</h3>
+	<div class="sg-component">
+		{% include "components/speakers.njk" %}
 	</div>
 </div>
 <div style="height: 800px"></div>
