@@ -517,6 +517,12 @@ span.icon {
 	font-weight: 400;
 	font-size: 1.125em; /* 18px /16 */
 }
+.speaker-talk-keynote {
+	font-weight: 900;
+	font-size: 0.7777777777778em; /* 14px /18 */
+	text-transform: uppercase;
+	margin-right: .5em;
+}
 
 /* Speakers Grid */
 .speakers {
