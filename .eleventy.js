@@ -3,6 +3,7 @@ const UglifyJS = require("uglify-js");
 
 module.exports = function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy("assets");
+	eleventyConfig.addPassthroughCopy(".htaccess");
 
 	eleventyConfig.addFilter("cssmin", function(code) {
 		return new CleanCSS({}).minify(code).styles;
