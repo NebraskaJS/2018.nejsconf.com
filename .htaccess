@@ -9,6 +9,7 @@ AddCharset utf-8 .css .js .json
 AddType text/html .html
 AddType text/css .css
 AddType image/svg+xml .svg .svgz
+AddType image/png .png
 
 # JavaScript
 AddType application/javascript .js

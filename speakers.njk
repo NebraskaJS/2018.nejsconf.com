@@ -1,0 +1,42 @@
+---
+pagination:
+  data: speakers
+  size: 1
+  alias: speaker
+permalink: /speakers/{{ speaker.twitter }}/
+layout: layout.njk
+herosmall: true
+---
+<div class="sg-c">
+	<div class="sg-component">
+		<div class="speakerpage">
+			<img src="{{ speaker.avatar_url }}" alt="{{ speaker.name }}" class="speakerpage-avatar">
+			<h1>{{ speaker.title }}</h1>
+			<h2>{{ speaker.name }}{% if speaker.keynote %}, Keynote{% endif %}</h2>
+
+			<dl>
+				<dt>Twitter</dt>
+				<dd><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></dd>
+	{% if speaker.bio %}
+				<dt>Bio</dt>
+				<dd>{{ speaker.bio | safe }}</dd>
+	{% endif %}
+	{% if speaker.talk %}
+				<dt>{% if speaker.keynote %}Keynote {% endif %}Talk Description</dt>
+				<dd>{{ speaker.talk | safe }}</dd>
+	{% endif %}
+			</dl>
+		</div>
+
+		<h2>Full Speaker List</h2>
+		<div class="speaker-list">
+{% for speaker in speakers %}
+			{% set speakerPageUrl %}/speakers/{{ speaker.twitter }}/{% endset %}
+			<a href="{{ speakerPageUrl | url }}" class="speaker speaker-sm{% if speakerPageUrl == page.url %} speaker-active{% endif %}">
+				<img src="{{ speaker.avatar_url }}" alt="{{ speaker.name }}" class="speaker-img">
+				<h3 class="speaker-name">{{ speaker.name }}</h3>
+			</a>
+{% endfor %}
+		</div>
+	</div>
+</div>

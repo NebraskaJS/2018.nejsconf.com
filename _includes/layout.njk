@@ -7,8 +7,8 @@
 {% set css %}{% include "theme.css" %}{% endset %}
 {% set js %}{% include "script.js" %}{% endset %}
 		<link rel="preload" href="/assets/img/earth-nobg-crop.png" as="image" />
-		<style>{{ css | safe }}</style>
-		<script>{{ js | safe }}</script>
+		<style>{{ css | cssmin | safe }}</style>
+		<script>{{ js | jsmin | safe }}</script>
 		<meta property="og:title" content="NEJS CONF 2018{% if title %}—{{ title }}{% endif %}" />
 		<meta property="og:type" content="website" />
 		<meta property="og:description" content="NEJS Conf is a single day, single track conference dedicated to web development and JavaScript." />
@@ -28,6 +28,11 @@
 
 		{{ content | safe }}
 
+		<div class="sg-c">
+			<div class="sg-component">
+				<p>©2018 <a href="https://twitter.com/nejsconf/lists/nejs-conf-organizers/members">NEJS CONF Organizers</a> and <a href="https://nebraskajs.com/">NebraskaJS</a>. Part of Nebraska JavaScript, LLC.</p>
+			</div>
+		</div>
 {% set imgJs %}{% include "images.js" %}{% endset %}
 		<script>{{ imgJs | jsmin | safe }}</script>
 	</body>

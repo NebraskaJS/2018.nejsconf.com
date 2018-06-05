@@ -24,7 +24,6 @@ module.exports = function(eleventyConfig) {
 			"md",
 			"njk",
 			"html",
-			"jstl",
 			"css"
 		],
 		markdownTemplateEngine: "njk",

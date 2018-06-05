@@ -1,47 +1,10 @@
 <div class="speakers">
-	<a class="speaker">
-		<img src="/assets/img/speakers/clarissa.jpg" alt="Carmen Bourlon" class="speaker-img">
-		<h2 class="speaker-name">Clarissa Peterson</h2>
-		<p class="speaker-talk"><span class="speaker-talk-keynote">Keynote</span> Code Is Not Neutral: The Ethics of Web Development</p>
+{% for speaker in speakers %}
+	{% set speakerPageUrl %}/speakers/{{ speaker.twitter }}/{% endset %}
+	<a href="{{ speakerPageUrl | url }}" class="speaker">
+		<img src="{{ speaker.avatar_url }}" alt="{{ speaker.name }}" class="speaker-img">
+		<h2 class="speaker-name">{{ speaker.name }}</h2>
+		<p class="speaker-talk">{% if speaker.keynote %}<span class="speaker-talk-keynote">Keynote</span> {% endif %}{{ speaker.title }}</p>
 	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/seldo.jpg" alt="Laurie Voss" class="speaker-img">
-		<h2 class="speaker-name">Laurie Voss</h2>
-		<p class="speaker-talk"><span class="speaker-talk-keynote">Keynote</span> npm and the Future of JavaScript</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/carmalou.jpg" alt="Carmen Bourlon" class="speaker-img">
-		<h2 class="speaker-name">Carmen Bourlon</h2>
-		<p class="speaker-talk">At Your Service With Service Workers</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/chantastic.jpg" alt="Michael Chan" class="speaker-img">
-		<h2 class="speaker-name">Michael Chan</h2>
-		<p class="speaker-talk">Hot Garbage: Clean Code is Dead</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/haubertdashery.jpg" alt="Beth Haubert" class="speaker-img">
-		<h2 class="speaker-name">Beth Haubert</h2>
-		<p class="speaker-talk">WTF Are Serverless Apps? ¯\_(ツ)_/¯</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/karlgroves.jpg" alt="Karl Groves" class="speaker-img">
-		<h2 class="speaker-name">Karl Groves</h2>
-		<p class="speaker-talk">What Is This Thing and What Does It Do?</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/benmvp.jpg" alt="Ben Ilegbodu" class="speaker-img">
-		<h2 class="speaker-name">Ben Ilegbodu</h2>
-		<p class="speaker-talk">Let’s Web Dev Like It’s 1999!</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/stevekinney.jpg" alt="Steve Kinney" class="speaker-img">
-		<h2 class="speaker-name">Steve Kinney</h2>
-		<p class="speaker-talk">Actually Understanding Asynchronous JavaScript</p>
-	</a>
-	<a class="speaker">
-		<img src="/assets/img/speakers/sitnikcode.jpg" alt="Andrey Sitnik" class="speaker-img">
-		<h2 class="speaker-name">Andrey Sitnik</h2>
-		<p class="speaker-talk">CRDT: Conflict-free Data Types for Collaborative Editing and Offline-First</p>
-	</a>
+{% endfor %}
 </div>
