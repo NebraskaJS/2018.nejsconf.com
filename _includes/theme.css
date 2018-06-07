@@ -4,6 +4,18 @@ body {
 	margin: 0;
 	padding: 0;
 }
+footer {
+	text-align: center;
+}
+
+/* Screen readers only */
+.sr-only {
+	position: absolute;
+	height: 1px;
+	width: 1px; 
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
 
 /* Web Fonts */
 .wf-effra-i9-active body {
