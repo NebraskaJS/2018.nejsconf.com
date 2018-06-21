@@ -378,9 +378,9 @@ span.icon {
 	min-width: 200px;
 	min-height: 250px;
 	position: relative;
+	box-sizing: border-box;
 }
 .sponsors-block-cta {
-	min-height: 0;
 	font-size: 2em;
 	text-align: center;
 }
@@ -397,15 +397,13 @@ span.icon {
 	display: flex;
 	align-content: center;
 	justify-content: center;
+	flex-direction: column;
 	border: 3px solid #eee;
 }
 .sponsors-block a:hover,
 .sponsors-block a:focus {
 	border-color: #ddd;
 	background-color: #f7f7f7;
-}
-.sponsors-block-cta a {
-	position: static;
 }
 .sponsors-block a,
 .sponsors-block a:visited {
@@ -414,6 +412,12 @@ span.icon {
 .sponsors-block-cta a,
 .sponsors-block-cta a:visited {
 	color: #777;
+	padding-left: .5em;
+	padding-right: .5em;
+}
+.sponsors-block-cta span {
+	display: block;
+	white-space: nowrap;
 }
 .sponsors-block img {
 	width: 100%;
