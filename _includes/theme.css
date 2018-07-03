@@ -8,6 +8,13 @@ footer {
 	text-align: center;
 }
 
+/* Code */
+code {
+	font-family: Consolas, Monaco, monospace;
+	font-size: 0.875em; /* 14px /16 */
+	font-weight: 700;
+}
+
 /* Screen readers only */
 .sr-only {
 	position: absolute;
@@ -25,17 +32,24 @@ footer {
 :link {
 	color: #222;
 }
+:visited {
+	color: #2b332d;
+}
 
 dl {
-	margin: 2em 0;
+	margin: 1em 0;
 	font-size: 1.25em; /* 20px /16 */
 }
 dt {
 	font-weight: 700;
+	text-transform: uppercase;
 }
 dd {
-	margin: 0 0 2em;
+	margin: 0 0 1em;
 	max-width: 45em;
+}
+dd :first-child {
+	margin-top: 0;
 }
 
 /* Colors */
@@ -262,6 +276,9 @@ span.icon {
 .info-highlight-b {
 	font-weight: 700;
 	text-transform: uppercase;
+}
+.info-highlight + dl {
+	margin: 1em 0;
 }
 
 /* Info Block */
@@ -506,7 +523,7 @@ span.icon {
 	padding: 3.5em 15%;
 	position: relative;
 	z-index: 0;
-	max-width: 23em;
+	max-width: 14em;
 	margin: 0 auto 8%;
 	text-decoration: none;
 	transition: filter .6s ease-in-out;
@@ -642,7 +659,7 @@ a[href].speaker.speaker:hover:after {
 	grid-gap: 100px 100px;
 	margin: 7em 0 3em;
 }
-@media (min-width: 800px) {
+@media (min-width: 48em) { /* 768px */
 	.speakers {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -654,6 +671,11 @@ a[href].speaker.speaker:hover:after {
 	}
 	.speakers .speaker:nth-child(2n) {
 		bottom: -3vw;
+	}
+}
+@media (min-width: 64em) { /* 1024px */
+	.speakers {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
 
@@ -684,5 +706,38 @@ a[href].speaker.speaker:hover:after {
 	.speakerpage-avatar {
 		margin: 0 0 3em 3em;
 		float: right;
+	}
+}
+
+/* Schedule */
+.schedule {
+	position: relative;
+	padding-left: 1.5em;
+	background-repeat: no-repeat;
+	font-size: 0.875em; /* 14px /16 */
+}
+.schedule:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 2px solid #2b332d;
+}
+@media( min-width: 48em) { /* 768px */
+	.schedule-a {
+		background-image: url({{ "/assets/img/lander-stars.svg" | url }});
+		padding-right: 44%;
+		background-position: 98% 50%;
+		background-size: 36% auto;
+	}
+	.schedule-b {
+		background-image: url({{ "/assets/img/landed.jpg" | url }});
+		padding-left: 59%;
+		background-position: 2% 50%;
+		background-size: 51% auto;
+	}
+	.schedule-b:before {
+		left: 55%;
 	}
 }
