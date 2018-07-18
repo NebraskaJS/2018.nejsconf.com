@@ -199,6 +199,14 @@ span.icon {
 .hero-quote-c-coc {
 	border: 0;
 }
+.hero-quote-c-venue {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.hero-quote-c-a11y {
+  padding-top: 0;
+  border-top: 0;
+}
 .hero-quote {
 	position: relative;
 	font-size: 1.5rem; /* 24px /16 */
