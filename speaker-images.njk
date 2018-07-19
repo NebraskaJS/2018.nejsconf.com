@@ -1,0 +1,26 @@
+---
+pagination:
+  data: speakers
+  size: 1
+  alias: speaker
+permalink: /speaker-banner/{{ speaker.twitter }}/
+layout: layout.njk
+showregisterbutton: false
+showfooter: false
+bodyclass: speakerbanner
+---
+<div class="sg-c">
+	<div class="sg-component">
+		<div class="speakerpage speakerpage-banner speakerpage-banner-hero">
+			<img src="{{ speaker.avatar_url }}" alt="{{ speaker.name }}" class="speakerpage-avatar">
+			<h1><span>{{ speaker.title }}</span></h1>
+			<h2>
+				<span>
+					{{ speaker.name }}<br>
+					@{{ speaker.twitter }}<br>
+					{{ speaker.time }}
+				</span>
+			</h2>
+		</div><!-- /speakerpage -->
+	</div>
+</div>
