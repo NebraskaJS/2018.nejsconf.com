@@ -719,6 +719,9 @@ a[href].speaker.speaker:hover:after {
 
 /* Speaker Banner Pages */
 @media (min-width: 45em) { /* 720px */
+	.speakerbanner {
+		position: relative;
+	}
 	.speakerbanner .hero {
 		z-index: -1;
 		height: 1280px;
@@ -727,6 +730,28 @@ a[href].speaker.speaker:hover:after {
 	.speakerbanner .hero-title {
 		justify-content: start;
 	}
+	.speakerbanner .sponsors {
+		grid-template-columns: repeat(3,1fr);
+		grid-gap: 16px 16px;
+		position: absolute;
+		bottom: 1rem;
+		left: 1rem;
+		right: 1rem;
+		margin: 0;
+	}
+	.speakerbanner .sponsors-block {
+		background-color: rgba(255,255,255,.85);
+		min-width: 0;
+		min-height: 160px;
+		height: 160px;
+	}
+	.speakerbanner .sponsors-block a {
+		border-width: 0;
+	}
+	.speakerbanner .sponsors-block-cta {
+		display: none;
+	}
+
 	.speakerpage-banner {
 		margin: 0 auto;
 		text-align: center;
@@ -734,19 +759,18 @@ a[href].speaker.speaker:hover:after {
 	.speakerpage-banner-hero {
 		position: absolute;
 		top: 22rem;
-		width: 100%;
 		color: #fff;
 		text-shadow: 0 1px 1px rgba(0,0,0,.7);
 	}
 	.speakerpage-banner h1 {
 		font-size: 3.5em;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 	}
 	.speakerpage-banner h2 {
 		font-size: 3em;
-		margin-left: 1.5rem;
-		margin-right: 1.5rem;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
 		margin-bottom: 1.5em;
 	}
 	.speakerpage-banner h1 span,
