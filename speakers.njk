@@ -21,6 +21,10 @@ herosmall: true
 				<dt>Bio</dt>
 				<dd>{{ speaker.bio | safe }}</dd>
 	{% endif %}
+	{% if speaker.time %}
+				<dt>Talk Time</dt>
+				<dd>{{ speaker.time }}</dd>
+	{% endif %}
 	{% if speaker.talk %}
 				<dt>{% if speaker.keynote %}Keynote {% endif %}Talk Description</dt>
 				<dd>{{ speaker.talk | safe }}</dd>
