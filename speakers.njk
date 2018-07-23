@@ -6,6 +6,7 @@ pagination:
 permalink: /speakers/{{ speaker.twitter }}/
 layout: layout.njk
 herosmall: true
+hideSponsorCTA: true
 ---
 <div class="sg-c">
 	<div class="sg-component">
@@ -36,7 +37,7 @@ herosmall: true
 		<h2 class="hero-register"><a href="https://register.nejsconf.com/" class="btn-primary">Register <span>for NEJS CONF</span></a></h2>
 	</div>
 	<div class="sg-component">
-		<h2>Full Speaker List</h2>
+		<h2 id="speakers" class="group-hed">Speakers</h2>
 		<div class="speaker-list">
 {% for speaker in speakers %}
 			{% set speakerPageUrl %}/speakers/{{ speaker.twitter }}/{% endset %}
@@ -46,5 +47,9 @@ herosmall: true
 			</a>
 {% endfor %}
 		</div>
+	</div>
+	<div class="sg-component">
+		<h2 id="sponsors" class="group-hed group-hed-r">Sponsored By</h2>
+		{% include "components/sponsors.njk" %}
 	</div>
 </div>
