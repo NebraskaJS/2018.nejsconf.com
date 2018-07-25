@@ -1,4 +1,3 @@
-<script>
 var countdown = document.querySelector(".countdown");
 var nejsconfTime = new Date("2018-07-27T13:00:00Z").getTime();
 
@@ -17,4 +16,3 @@ function renderTime(date) {
 setInterval(function() {
 	countdown.innerHTML = renderTime(new Date());
 }, 1000);
-</script>

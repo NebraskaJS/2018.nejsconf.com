@@ -2,6 +2,7 @@ const CleanCSS = require('clean-css');
 const UglifyJS = require("uglify-js");
 
 module.exports = function(eleventyConfig) {
+	eleventyConfig.addPassthroughCopy("serviceworker.js");
 	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy(".htaccess");
 
