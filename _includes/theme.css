@@ -753,7 +753,35 @@ a[href].speaker.speaker:hover:after {
 /* Countdown */
 @font-face {
 	font-family: sevenseg;
+	font-display: block;
 	src: url(/assets/fonts/7segfault.ttf) format("truetype");
+}
+
+.countdown {
+	position: relative;
+	display: block;
+	text-align: center;
+	font-size: 14vw;
+	font-family: sevenseg, system-ui, sans-serif;
+	font-style: italic;
+	padding: .2em 0 0;
+	margin: 2rem auto;
+	background-color: #000;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #bfb324, 1px -1px 1px #bfb324, -1px 1px 1px #bfb324, -1px -1px 1px #bfb324;
+	min-height: 12.2vw;
+}
+.countdown,
+.countdown:link,
+.countdown:visited {
+	color: #fcec31;
+}
+.countdown .minus {
+	font-family: Courier New;
+	position: relative;
+	top: -.25em;
+	left: -12px;
+	font-size: 60%;
 }
 
 .page-countdown {
@@ -775,63 +803,42 @@ a[href].speaker.speaker:hover:after {
 .page-countdown footer {
 	display: none;
 }
-
-.countdown,
-.countdown-humane {
-	text-align: center;
-}
-.countdown-humane {
-	padding: .75em 0;
-}
-.countdown {
-	position: relative;
-	font-size: 14vw;
-	font-family: sevenseg, system-ui, sans-serif;
-	font-style: italic;
-	background-color: rgba(27,31,42,.8);
-	color: #fed56c;
-	text-shadow: 2px 2px 2px #8d5f24, 2px -2px 2px #8d5f24, -2px 2px 2px #8d5f24, -2px -2px 2px #8d5f24;
-	border: .5rem solid #566793;
-	padding: .2em 0 0;
+.page-countdown .countdown {
+	background-color: rgba(0,0,0,.7);
+	border: .5rem solid #000;
+	margin-top: 0;
+	margin-bottom: 0;
 	width: 60%;
-	margin: 0 auto;
-}
-.countdown .minus {
-	font-family: Courier New;
-	position: relative;
-	top: -.25em;
-	left: -12px;
-	font-size: 60%;
 }
 @media (min-width: 35em) { /* 560px */
-	.countdown {
+	.page-countdown .countdown {
 		border-bottom-width: 2.5rem;
 	}
-	.countdown .hours,
-	.countdown .minutes,
-	.countdown .seconds {
+	.page-countdown .countdown .hours,
+	.page-countdown .countdown .minutes,
+	.page-countdown .countdown .seconds {
 		padding-bottom: 2.5rem;
 	}
-	.countdown .hours:before,
-	.countdown .minutes:before,
-	.countdown .seconds:before {
+	.page-countdown .countdown .hours:before,
+	.page-countdown .countdown .minutes:before,
+	.page-countdown .countdown .seconds:before {
 		position: absolute;
 		width: 13.1vw;
 		bottom: -2rem;
 		font-size: 1.5rem;
 		padding: 0;
-		background-color: #566793;
+		background-color: #000;
 		color: #fff;
 		text-shadow: none;
 		text-transform: uppercase;
 	}
-	.countdown .hours:before {
+	.page-countdown .countdown .hours:before {
 		content: "Hour";
 	}
-	.countdown .minutes:before {
+	.page-countdown .countdown .minutes:before {
 		content: "Minute";
 	}
-	.countdown .seconds:before {
+	.page-countdown .countdown .seconds:before {
 		content: "Second";
 	}
 }

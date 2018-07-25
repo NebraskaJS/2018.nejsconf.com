@@ -3,12 +3,18 @@ layout: layout.njk
 ---
 
 <div class="sg-c">
+	<div class="sg-component-full">
+		<a href="/countdown/" class="countdown"></a>
+	</div>
+</div>
+<div class="sg-c">
 	<div class="sg-component">
 		<div class="hero-quote-c">
 			<p class="hero-quote icon icon-moon">NEJS CONF is a single day, single track conference dedicated to Web Development and JavaScript.</p>
 		</div>
 	</div>
-
+</div>
+<div class="sg-c">
 	<div class="sg-component">
 		<div class="info-block-group">
 			<div class="info-block info-block-spacewalk lazy">
@@ -95,3 +101,5 @@ layout: layout.njk
 		</div>
 	</div>
 </div>
+
+{% include "countdown-script.njk" %}
