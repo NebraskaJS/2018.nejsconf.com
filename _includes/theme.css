@@ -749,3 +749,86 @@ a[href].speaker.speaker:hover:after {
 		left: 55%;
 	}
 }
+
+/* Countdown */
+@font-face {
+	font-family: sevenseg;
+	src: url(/assets/fonts/7segfault.ttf) format("truetype");
+}
+
+.page-countdown {
+	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	text-align: center;
+}
+.page-countdown,
+.page-countdown :link,
+.page-countdown :visited {
+	color: #aaa;
+}
+.page-countdown .hero {
+	display: none;
+}
+
+.countdown,
+.countdown-humane {
+	text-align: center;
+}
+.countdown-humane {
+	padding: .75em 0;
+}
+.countdown {
+	position: relative;
+	font-size: 22vw;
+	font-family: sevenseg, system-ui, sans-serif;
+	font-style: italic;
+	background-color: #1b1f2a;
+	color: #fed56c;
+	text-shadow: 2px 2px 2px #8d5f24, 2px -2px 2px #8d5f24, -2px 2px 2px #8d5f24, -2px -2px 2px #8d5f24;
+	border: .5rem solid #566793;
+	padding: .4em 0 .2em;
+	width: 96%;
+	margin: 0 auto;
+}
+.countdown .minus {
+	font-family: Courier New;
+	position: relative;
+	top: -.25em;
+	left: -12px;
+	font-size: 60%;
+}
+@media (min-width: 35em) { /* 560px */
+	.countdown {
+		border-bottom-width: 2.5rem;
+	}
+	.countdown .hours,
+	.countdown .minutes,
+	.countdown .seconds {
+		padding-bottom: 2.5rem;
+	}
+	.countdown .hours:before,
+	.countdown .minutes:before,
+	.countdown .seconds:before {
+		position: absolute;
+		width: 20.5vw;
+		bottom: -2rem;
+		font-size: 1.5rem;
+		padding: 0;
+		background-color: #566793;
+		color: #fff;
+		text-shadow: none;
+		text-transform: uppercase;
+	}
+	.countdown .hours:before {
+		content: "Hour";
+	}
+	.countdown .minutes:before {
+		content: "Minute";
+	}
+	.countdown .seconds:before {
+		content: "Second";
+	}
+}
