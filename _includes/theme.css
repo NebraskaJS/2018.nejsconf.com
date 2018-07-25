@@ -758,6 +758,8 @@ a[href].speaker.speaker:hover:after {
 
 .page-countdown {
 	background-color: #000;
+	background-image: url(/assets/img/countdown.jpg);
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -767,9 +769,10 @@ a[href].speaker.speaker:hover:after {
 .page-countdown,
 .page-countdown :link,
 .page-countdown :visited {
-	color: #aaa;
+	color: #ddd;
 }
-.page-countdown .hero {
+.page-countdown .hero,
+.page-countdown footer {
 	display: none;
 }
 
@@ -782,15 +785,15 @@ a[href].speaker.speaker:hover:after {
 }
 .countdown {
 	position: relative;
-	font-size: 22vw;
+	font-size: 14vw;
 	font-family: sevenseg, system-ui, sans-serif;
 	font-style: italic;
-	background-color: #1b1f2a;
+	background-color: rgba(27,31,42,.8);
 	color: #fed56c;
 	text-shadow: 2px 2px 2px #8d5f24, 2px -2px 2px #8d5f24, -2px 2px 2px #8d5f24, -2px -2px 2px #8d5f24;
 	border: .5rem solid #566793;
-	padding: .4em 0 .2em;
-	width: 96%;
+	padding: .2em 0 0;
+	width: 60%;
 	margin: 0 auto;
 }
 .countdown .minus {
@@ -813,7 +816,7 @@ a[href].speaker.speaker:hover:after {
 	.countdown .minutes:before,
 	.countdown .seconds:before {
 		position: absolute;
-		width: 20.5vw;
+		width: 13.1vw;
 		bottom: -2rem;
 		font-size: 1.5rem;
 		padding: 0;
