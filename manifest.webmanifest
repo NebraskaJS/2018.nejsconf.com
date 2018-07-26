@@ -1,0 +1,28 @@
+{
+    "background_color": "#ffffff",
+    "description": "NEJS CONF is a single day, single track conference dedicated to Web Development and JavaScript.",
+    "dir": "ltr",
+    "display": "minimal-ui",
+    "icons": [
+        {
+            "src": "/assets/icons/180.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/icons/512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "lang": "en",
+    "name": "NEJS CONF 2018",
+    "short_name": "NEJS CONF",
+    "start_url": "/",
+    "theme_color": "#2b2c2a"
+}

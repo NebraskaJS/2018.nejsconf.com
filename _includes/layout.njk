@@ -10,10 +10,25 @@ showfooter: true
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>NEJS CONF 2018{% if title %}—{{ title }}{% endif %}</title>
 {% set css %}{% include "theme.css" %}{% endset %}
-{% set js %}{% include "script.js" %}{% endset %}
-		<link rel="preload" href="/assets/img/earth-nobg-crop.png" as="image" />
+		<link rel="preload" href="/assets/img/earth-nobg-crop.webp" as="image" />
+		<link rel="preload" href="https://use.typekit.net/ppn2vqj.css" as="style" crossorigin>
+		<script>
+			if("fonts" in document) {
+				document.fonts.load("1em effra").then(function() {
+					document.documentElement.classList.add("effra-loaded");
+				});
+			}
+
+			// webp feature test
+			// via https://stackoverflow.com/questions/5573096/detecting-webp-support
+			var elem = document.createElement("canvas");
+			if (!!(elem.getContext && elem.getContext("2d"))) {
+				if(elem.toDataURL("image/webp").indexOf("data:image/webp") == 0) {
+					document.documentElement.classList.add("webp-supported");
+				}
+			}
+		</script>
 		<style>{{ css | cssmin | safe }}</style>
-		<script>{{ js | jsmin | safe }}</script>
 		<meta property="og:title" content="NEJS CONF 2018{% if title %}—{{ title }}{% endif %}" />
 
 		<meta name="description" content="{% if speaker.name %}{{ speaker.name }} is speaking at NEJS CONF! {% endif %}NEJS CONF is a single day, single track conference dedicated to web development and JavaScript.">
@@ -32,6 +47,9 @@ showfooter: true
 		<meta property="og:locale" content="en_US">
 		<meta property="og:image:width" content="1180">
 		<meta property="og:image:height" content="590">
+
+		<link rel="manifest" href="/manifest.webmanifest" />
+		<meta name="theme-color" content="#2b2c2a" />
 	</head>
 	<body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 {% if skipHero -%}
