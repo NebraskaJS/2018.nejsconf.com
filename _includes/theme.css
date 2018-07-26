@@ -792,7 +792,7 @@ a[href].speaker.speaker:hover:after {
 
 .page-countdown {
 	background-color: #000;
-	background-image: url(/assets/img/countdown.jpg);
+	background-image: url({{ "/assets/img/countdown.jpg" | url }});
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
