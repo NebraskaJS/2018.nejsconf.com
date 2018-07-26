@@ -346,6 +346,12 @@ span.icon {
 	border-bottom: 9px solid #2b332d;
 	text-transform: uppercase;
 }
+.group-hed :link {
+	text-decoration: none;
+}
+.group-hed :link:after {
+	content: "→";
+}
 .group-hed-r {
 	text-align: right;
 }

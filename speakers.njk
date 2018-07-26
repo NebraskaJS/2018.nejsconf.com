@@ -16,15 +16,15 @@ hideSponsorCTA: true
 			<h2>{{ speaker.name }}{% if speaker.keynote %}, Keynote{% endif %}</h2>
 
 			<dl>
+	{% if speaker.time %}
+				<dt>Talk Time</dt>
+				<dd>{{ speaker.time }}</dd>
+	{% endif %}
 				<dt>Twitter</dt>
 				<dd><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></dd>
 	{% if speaker.bio %}
 				<dt>Bio</dt>
 				<dd>{{ speaker.bio | safe }}</dd>
-	{% endif %}
-	{% if speaker.time %}
-				<dt>Talk Time</dt>
-				<dd>{{ speaker.time }}</dd>
 	{% endif %}
 	{% if speaker.talk %}
 				<dt>{% if speaker.keynote %}Keynote {% endif %}Talk Description</dt>

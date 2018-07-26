@@ -1,0 +1,22 @@
+---
+layout: layout.njk
+---
+
+<div class="sg-c">
+	<div class="sg-component">
+		<h2 id="venue" class="group-hed">Venue</h2>
+	</div>
+	<div class="sg-component-full">
+		{% include "components/venue-image.njk" %}
+	</div>
+	<div class="sg-component">
+		{% include "components/venue-location.njk" %}
+
+		{% include "components/a11y.njk" %}
+	</div>
+
+	<div class="sg-component">
+		<h2 id="sponsors" class="group-hed group-hed-r">Sponsored By</h2>
+		{% include "components/sponsors.njk" %}
+	</div>
+</div>
