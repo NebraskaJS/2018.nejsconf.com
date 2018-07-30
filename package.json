@@ -1,7 +1,7 @@
 {
   "name": "nejsconf-2018",
-  "version": "1.0.0",
-  "serviceworkerversion": "v1",
+  "version": "2.0.0",
+  "serviceworkerversion": "v2",
   "private": true,
   "description": "Web site for NEJS CONF 2018",
   "scripts": {
