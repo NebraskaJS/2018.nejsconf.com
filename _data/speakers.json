@@ -10,8 +10,8 @@
 	"time": "x:00 xm"
 },{
 	"name": "Eva PenzyMoog",
-	"keynote": false,
-	"title": "Designing Against Domestic Violence",
+	"keynote": true,
+	"title": " Designing Against Domestic Violence ",
 	"avatar_url": "/assets/img/speakers/filler_social.jpg",
 	"social_avatar_url": "/assets/img/speakers/filler-gray.jpg",
 	"twitter": "seldo",
