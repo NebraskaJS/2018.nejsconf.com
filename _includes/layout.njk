@@ -11,20 +11,24 @@ showfooter: true
 {% set css %}{% include "theme.css" %}{% endset %}
 {% set js %}{% include "script.js" %}{% endset %}
 		<link rel="preload" href="/assets/img/earth-nobg-crop.png" as="image" />
+		
+		<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+
 		<style>{{ css | cssmin | safe }}</style>
 		<script>{{ js | jsmin | safe }}</script>
 		<meta property="og:title" content="GET CONF 2019{% if title %}—{{ title }}{% endif %}" />
 
-		<meta name="description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a single day, single track conference dedicated to web development and JavaScript.">
-		<meta name="twitter:description" property="og:description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a single day, single track conference dedicated to web development and JavaScript.">
+		<meta name="description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a one-day tech conference by women, for everyone. To amplify and celebrate the voices of women and non-men, and educate and connect people of all genders.">
+		<meta name="twitter:description" property="og:description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a one-day tech conference by women, for everyone. To amplify and celebrate the voices of women and non-men, and educate and connect people of all genders.">
 
-		<meta name="twitter:url" property="og:url" content="https://2018.nejsconf.com{{ page.url }}">
-		<meta name="twitter:image" property="og:image" content="https://2018.nejsconf.com{% if speaker.social_avatar_url %}{{ speaker.social_avatar_url }}{% else %}/assets/img/opengraph.png{% endif %}">
+		<meta name="twitter:url" property="og:url" content="https://2019.getconf.com{{ page.url }}">
+		<meta name="twitter:image" property="og:image" content="https://2019.getconf.com{% if speaker.social_avatar_url %}{{ speaker.social_avatar_url }}{% else %}/assets/img/opengraph.png{% endif %}">
 		<meta name="twitter:image:alt" property="og:image:alt" content="{% if speaker.name %}{{ speaker.name }} at {% endif %}GET CONF 2018">
 
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@nejsconf">
-		<meta name="twitter:creator" content="@nejsconf">
+		<meta name="twitter:site" content="@GETConfOmaha">
+		<meta name="twitter:creator" content="@GETConfOmaha">
 
 		<meta property="og:type" content="website">
 		<meta property="og:site_name" content="GET CONF 2019">
@@ -53,7 +57,7 @@ showfooter: true
 				</div>
 {% endif %}
 				<div class="sg-component">
-					<p>©2019 <a href="https://twitter.com/nejsconf/lists/nejs-conf-organizers/members">NEJS CONF Organizers</a> and <a href="https://nebraskajs.com/">NebraskaJS</a>. Part of Nebraska JavaScript, LLC.</p>
+					<p>©2019 <a href="https://twitter.com/nejsconf/lists/nejs-conf-organizers/members">GET CONF Organizers</a></p>
 				</div>
 			</div>
 		</footer>
