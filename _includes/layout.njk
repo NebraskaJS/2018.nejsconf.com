@@ -7,7 +7,7 @@ showfooter: true
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>NEJS CONF 2018{% if title %}—{{ title }}{% endif %}</title>
+		<title>GET CONF 2018{% if title %}—{{ title }}{% endif %}</title>
 {% set css %}{% include "theme.css" %}{% endset %}
 {% set js %}{% include "script.js" %}{% endset %}
 		<link rel="preload" href="/assets/img/earth-nobg-crop.png" as="image" />
@@ -15,12 +15,12 @@ showfooter: true
 		<script>{{ js | jsmin | safe }}</script>
 		<meta property="og:title" content="GET CONF 2019{% if title %}—{{ title }}{% endif %}" />
 
-		<meta name="description" content="{% if speaker.name %}{{ speaker.name }} is speaking at NEJS CONF! {% endif %}NEJS CONF is a single day, single track conference dedicated to web development and JavaScript.">
-		<meta name="twitter:description" property="og:description" content="{% if speaker.name %}{{ speaker.name }} is speaking at NEJS CONF! {% endif %}NEJS CONF is a single day, single track conference dedicated to web development and JavaScript.">
+		<meta name="description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a single day, single track conference dedicated to web development and JavaScript.">
+		<meta name="twitter:description" property="og:description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a single day, single track conference dedicated to web development and JavaScript.">
 
 		<meta name="twitter:url" property="og:url" content="https://2018.nejsconf.com{{ page.url }}">
 		<meta name="twitter:image" property="og:image" content="https://2018.nejsconf.com{% if speaker.social_avatar_url %}{{ speaker.social_avatar_url }}{% else %}/assets/img/opengraph.png{% endif %}">
-		<meta name="twitter:image:alt" property="og:image:alt" content="{% if speaker.name %}{{ speaker.name }} at {% endif %}NEJS CONF 2018">
+		<meta name="twitter:image:alt" property="og:image:alt" content="{% if speaker.name %}{{ speaker.name }} at {% endif %}GET CONF 2018">
 
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@nejsconf">
