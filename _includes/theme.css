@@ -218,7 +218,7 @@ span.icon {
 	position: relative;
 	font-size: 1.5rem; /* 24px /16 */
 	margin: 0 auto;
-	max-width: 33rem; /* 528px /16 */
+	max-width: 42rem; 
 	min-height: 3em;
 	line-height: 1.5;
 	padding-left: 2em;
@@ -778,88 +778,3 @@ a[href].speaker.speaker:hover:after {
 	src: url(/assets/fonts/7segfault.ttf) format("truetype");
 }
 
-.countdown {
-	position: relative;
-	display: block;
-	text-align: center;
-	font-size: 14vw;
-	font-family: sevenseg, system-ui, sans-serif;
-	font-style: italic;
-	padding: .2em 0 0;
-	margin: 2rem auto;
-	background-color: #000;
-	text-decoration: none;
-	text-shadow: 1px 1px 1px #bfb324, 1px -1px 1px #bfb324, -1px 1px 1px #bfb324, -1px -1px 1px #bfb324;
-	min-height: 12.2vw;
-}
-.countdown,
-.countdown:link,
-.countdown:visited {
-	color: #fcec31;
-}
-.countdown .minus {
-	font-family: Courier New;
-	position: relative;
-	top: -.25em;
-	left: -12px;
-	font-size: 60%;
-}
-
-.page-countdown {
-	background-color: #000;
-	background-image: url(/assets/img/countdown.jpg);
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100vh;
-	text-align: center;
-}
-.page-countdown,
-.page-countdown :link,
-.page-countdown :visited {
-	color: #ddd;
-}
-.page-countdown .hero,
-.page-countdown footer {
-	display: none;
-}
-.page-countdown .countdown {
-	background-color: rgba(0,0,0,.7);
-	border: .5rem solid #000;
-	margin-top: 0;
-	margin-bottom: 0;
-	width: 60%;
-}
-@media (min-width: 35em) { /* 560px */
-	.page-countdown .countdown {
-		border-bottom-width: 2.5rem;
-	}
-	.page-countdown .countdown .hours,
-	.page-countdown .countdown .minutes,
-	.page-countdown .countdown .seconds {
-		padding-bottom: 2.5rem;
-	}
-	.page-countdown .countdown .hours:before,
-	.page-countdown .countdown .minutes:before,
-	.page-countdown .countdown .seconds:before {
-		position: absolute;
-		width: 13.1vw;
-		bottom: -2rem;
-		font-size: 1.5rem;
-		padding: 0;
-		background-color: #000;
-		color: #fff;
-		text-shadow: none;
-		text-transform: uppercase;
-	}
-	.page-countdown .countdown .hours:before {
-		content: "Hour";
-	}
-	.page-countdown .countdown .minutes:before {
-		content: "Minute";
-	}
-	.page-countdown .countdown .seconds:before {
-		content: "Second";
-	}
-}
