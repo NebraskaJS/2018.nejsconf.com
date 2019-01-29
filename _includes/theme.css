@@ -88,19 +88,14 @@ span.icon {
 	background-repeat: no-repeat;
 	pointer-events: all;
 }
+.icon-aperature::before{
+	background-image: url({{ "/assets/img/aperature_open.svg"| url }})
+}
 .icon-moon::before {
 	background-image: url({{ "/assets/img/moon.svg" | url }});
 }
 .icon-telescope::before {
 	background-image: url({{ "/assets/img/telescope.svg" | url }});
-}
-.icon-facebook::before {
-	background-image: url({{ "/assets/img/facebook.svg" | url }});
-}
-.icon-facebook:active::before,
-.icon-facebook:hover::before,
-.icon-facebook-active::before {
-	background-image: url({{ "/assets/img/facebook-active.svg" | url }});
 }
 
 .icon-twitter::before {
@@ -479,6 +474,9 @@ span.icon {
 	margin-bottom: 1.5em;
 	padding-bottom: 4px;
 	border-bottom: 1px solid #eee;
+}
+h4 {
+    margin-bottom: 4px;
 }
 
 /* Style Guide Widget */
