@@ -133,7 +133,7 @@ span.icon {
 	max-width: 34.375rem; /* 550px /16 */
 	background-image: url({{ "/assets/img/CEAT@1120-test2.png" | url }});
 	background-size: cover;
-	background-position: 100% 50%;
+	background-position: 10% 50%;
 	background-repeat: no-repeat;
 }
 .hero-title {
