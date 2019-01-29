@@ -57,16 +57,28 @@ dd {
 dd :first-child {
 	margin-top: 0;
 }
+a:hover{
+	color: #A1C350;
+}
 
 /* Colors */
-.yellow {
-	background-color: #fcec31;
-}
 .dark-gray {
 	background-color: #2b332d;
 }
 .dark-gray-b {
 	background-color: #231f20;
+}
+.purple{
+	color: #643056;
+}
+.teal{
+	color: #008883;
+}
+.blue{
+	color: #0C3A5C;
+} 
+.green{
+	color:	#A1C350;
 }
 
 /* Icons */
@@ -88,15 +100,11 @@ span.icon {
 	background-repeat: no-repeat;
 	pointer-events: all;
 }
+
 .icon-aperature::before{
 	background-image: url({{ "/assets/img/aperature_open.svg"| url }})
 }
-.icon-moon::before {
-	background-image: url({{ "/assets/img/moon.svg" | url }});
-}
-.icon-telescope::before {
-	background-image: url({{ "/assets/img/telescope.svg" | url }});
-}
+
 
 .icon-twitter::before {
 	background-image: url({{ "/assets/img/twitter.svg" | url }});
@@ -123,7 +131,7 @@ span.icon {
 .hero-img {
 	width: 60%;
 	max-width: 34.375rem; /* 550px /16 */
-	background-image: url({{ "/assets/img/earth-nobg-crop.png" | url }});
+	background-image: url({{ "/assets/img/CEAT@1120-test2.png" | url }});
 	background-size: cover;
 	background-position: 100% 50%;
 	background-repeat: no-repeat;
@@ -282,18 +290,6 @@ span.icon {
 	margin: 0;
 	margin-left: -0.3333333333333em; /* -8px /24 */
 }
-.purple{
-	color: #643056;
-}
-.teal{
-	color: #0C3A5C;
-}
-.blue{
-	color: #0C3A5C;
-} 
-.green{
-	color:	#A1C350;
-}
 
 .info-highlight-b {
 	font-weight: 700;
@@ -343,6 +339,12 @@ span.icon {
 .info-block-moon.load {
 	background-image: url({{ "/assets/img/infoblock-moon.png" | url }});
 }
+.info-block-purple.load {
+	background-image: url({{ "/assets/img/purple_texture.png" | url }});
+}
+.info-block-teal.load {
+	background-image: url({{ "/assets/img/teal_texture.png" | url }});
+}
 
 @media (min-width: 768px) {
 	.info-block {
@@ -379,7 +381,6 @@ span.icon {
 	margin-bottom: 2rem; /* 32px /16 */
 }
 .venue-img {
-	max-width: 70em;
 	display: block;
 	width: 100%;
 	height: 100%;
@@ -476,7 +477,7 @@ span.icon {
 	border-bottom: 1px solid #eee;
 }
 h4 {
-    margin-bottom: 4px;
+    margin-bottom: 2px;
 }
 
 /* Style Guide Widget */
@@ -753,9 +754,9 @@ a[href].speaker.speaker:hover:after {
 }
 @media( min-width: 48em) { /* 768px */
 	.schedule-a {
-		background-image: url({{ "/assets/img/lander-stars.svg" | url }});
+		background-image: url({{ "/assets/img/GET.svg" | url }});
 		padding-right: 44%;
-		background-position: 98% 50%;
+		background-position: 90% 50%;
 		background-size: 36% auto;
 	}
 	.schedule-b {
