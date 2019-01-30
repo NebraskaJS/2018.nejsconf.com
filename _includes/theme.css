@@ -80,6 +80,11 @@ a:hover{
 .green{
 	color:	#A1C350;
 }
+.white-large{
+	color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.6em;
+}
 
 /* Icons */
 span.icon {
@@ -130,18 +135,18 @@ span.icon {
 }
 .hero-img {
 	width: 60%;
-	max-width: 34.375rem; /* 550px /16 */
-	background-image: url({{ "/assets/img/CEAT@1120-test2.png" | url }});
-	background-size: cover;
+	max-width: 19.375rem;
+	/* background-image: url({{ "/assets/img/GET_white.svg" | url }}); */
 	background-position: 10% 50%;
 	background-repeat: no-repeat;
+	margin-left: 70px;
 }
 .hero-title {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	flex: 1;
-	padding: 3.5em 1.5em;
+	padding: 3.5em 3.5em;
 	z-index: 2;
 }
 .hero-link {
