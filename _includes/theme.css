@@ -339,6 +339,10 @@ span.icon {
 .info-block-moon.load {
 	background-image: url({{ "/assets/img/infoblock-moon.png" | url }});
 }
+.info-block-purple ul{
+	list-style: disc;
+	margin-left: 20px;
+}
 .info-block-purple.load {
 	background-image: url({{ "/assets/img/purple_texture.png" | url }});
 }
@@ -478,6 +482,10 @@ span.icon {
 }
 h4 {
     margin-bottom: 2px;
+}
+h5{
+	font-weight: normal;
+
 }
 
 /* Style Guide Widget */
@@ -770,10 +778,8 @@ a[href].speaker.speaker:hover:after {
 	}
 }
 
-/* Countdown */
-@font-face {
-	font-family: sevenseg;
-	font-display: block;
-	src: url(/assets/fonts/7segfault.ttf) format("truetype");
+.note{
+	color:#616161;
+	font-style: italic;
 }
 

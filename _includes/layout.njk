@@ -7,7 +7,7 @@ showfooter: true
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>GET CONF 2018{% if title %}—{{ title }}{% endif %}</title>
+		<title>GETconf 2019{% if title %}—{{ title }}{% endif %}</title>
 {% set css %}{% include "theme.css" %}{% endset %}
 {% set js %}{% include "script.js" %}{% endset %}
 		<link rel="preload" href="/assets/img/earth-nobg-crop.png" as="image" />
@@ -17,7 +17,7 @@ showfooter: true
 
 		<style>{{ css | cssmin | safe }}</style>
 		<script>{{ js | jsmin | safe }}</script>
-		<meta property="og:title" content="GET CONF 2019{% if title %}—{{ title }}{% endif %}" />
+		<meta property="og:title" content="GETconf 2019{% if title %}—{{ title }}{% endif %}" />
 
 		<meta name="description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a one-day tech conference by women, for everyone. To amplify and celebrate the voices of women and non-men, and educate and connect people of all genders.">
 		<meta name="twitter:description" property="og:description" content="{% if speaker.name %}{{ speaker.name }} is speaking at GET CONF! {% endif %}GET CONF is a one-day tech conference by women, for everyone. To amplify and celebrate the voices of women and non-men, and educate and connect people of all genders.">
@@ -35,6 +35,17 @@ showfooter: true
 		<meta property="og:locale" content="en_US">
 		<meta property="og:image:width" content="1180">
 		<meta property="og:image:height" content="590">
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126894718-1"></script>
+		<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-126894718-1');
+		</script>
+
 	</head>
 	<body{% if bodyclass %} class="{{ bodyclass }}"{% endif %}>
 {% if skipHero -%}
