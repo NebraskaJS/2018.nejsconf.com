@@ -340,7 +340,8 @@ span.icon {
 	background-image: url({{ "/assets/img/infoblock-moon.png" | url }});
 }
 .info-block-purple ul{
-	list-style:disc;
+	list-style: disc;
+	margin-left: 20px;
 }
 .info-block-purple.load {
 	background-image: url({{ "/assets/img/purple_texture.png" | url }});
@@ -481,6 +482,10 @@ span.icon {
 }
 h4 {
     margin-bottom: 2px;
+}
+h5{
+	font-weight: normal;
+	
 }
 
 /* Style Guide Widget */
