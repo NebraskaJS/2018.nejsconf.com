@@ -216,6 +216,7 @@ span.icon {
 .hero-quote-c-a11y {
   padding-top: 0;
   border-top: 0;
+  border-bottom: 0;
 }
 .hero-quote {
 	position: relative;
