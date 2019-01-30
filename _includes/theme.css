@@ -339,6 +339,9 @@ span.icon {
 .info-block-moon.load {
 	background-image: url({{ "/assets/img/infoblock-moon.png" | url }});
 }
+.info-block-purple ul{
+	list-style:disc;
+}
 .info-block-purple.load {
 	background-image: url({{ "/assets/img/purple_texture.png" | url }});
 }
