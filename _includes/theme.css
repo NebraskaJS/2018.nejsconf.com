@@ -485,7 +485,7 @@ h4 {
 }
 h5{
 	font-weight: normal;
-	
+
 }
 
 /* Style Guide Widget */
@@ -778,10 +778,8 @@ a[href].speaker.speaker:hover:after {
 	}
 }
 
-/* Countdown */
-@font-face {
-	font-family: sevenseg;
-	font-display: block;
-	src: url(/assets/fonts/7segfault.ttf) format("truetype");
+.note{
+	color:#616161;
+	font-style: italic;
 }
 
