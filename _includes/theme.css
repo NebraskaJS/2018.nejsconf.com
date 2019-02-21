@@ -432,7 +432,7 @@ span.icon {
 	box-sizing: border-box;
 	display: flex;
 }
-#HudlAdjust, #conductixAdjust, #LightAdjust {
+#HudlAdjust, #conductixAdjust, #LightAdjust, #builderAdjust {
 	width: 80% ;
 }
 #MaebeanAdjust{
