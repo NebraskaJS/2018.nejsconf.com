@@ -441,6 +441,10 @@ span.icon {
 #VerizonAdjust{
 	max-width: 270px;
 }
+#MysteryAdjust{
+	width: 72%;
+	height: 110%;
+}
 .sponsors-block-cta {
 	font-size: 2em;
 	text-align: center;
