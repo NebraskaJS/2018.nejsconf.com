@@ -414,6 +414,7 @@ span.icon {
 	grid-gap: 50px 50px;
 	margin: 7em 0 3em;
 }
+
 @media (min-width: 500px) {
 	.sponsors {
 		grid-template-columns: repeat(2, 1fr);
@@ -429,6 +430,10 @@ span.icon {
 	min-height: 250px;
 	position: relative;
 	box-sizing: border-box;
+}
+.sponsors-block #HudlAdjust {
+	width: 70% ;
+	margin-top: 26%;
 }
 .sponsors-block-cta {
 	font-size: 2em;
