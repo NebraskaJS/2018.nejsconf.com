@@ -438,8 +438,8 @@ span.icon {
 #MaebeanAdjust{
 	width: 65%;
 }
-.sponsors-block #conductixAdjust{
-	width:80%
+#VerizonAdjust{
+	max-width: 270px;
 }
 .sponsors-block-cta {
 	font-size: 2em;
