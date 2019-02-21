@@ -430,10 +430,16 @@ span.icon {
 	min-height: 250px;
 	position: relative;
 	box-sizing: border-box;
+	display: flex;
 }
-.sponsors-block #HudlAdjust {
-	width: 70% ;
-	margin-top: 26%;
+#HudlAdjust, #conductixAdjust, #LightAdjust, #builderAdjust {
+	width: 80% ;
+}
+#MaebeanAdjust{
+	width: 65%;
+}
+#VerizonAdjust{
+	max-width: 270px;
 }
 .sponsors-block-cta {
 	font-size: 2em;
@@ -477,6 +483,7 @@ span.icon {
 .sponsors-block img {
 	width: 100%;
 	max-height: 100%;
+	align-self: center;
 }
 
 /* Global Style Guide */
