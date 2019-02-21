@@ -432,9 +432,14 @@ span.icon {
 	box-sizing: border-box;
 	display: flex;
 }
-.sponsors-block #HudlAdjust {
-	width: 70% ;
-	margin-top: 26%;
+#HudlAdjust, #conductixAdjust, #LightAdjust {
+	width: 80% ;
+}
+#MaebeanAdjust{
+	width: 65%;
+}
+.sponsors-block #conductixAdjust{
+	width:80%
 }
 .sponsors-block-cta {
 	font-size: 2em;
