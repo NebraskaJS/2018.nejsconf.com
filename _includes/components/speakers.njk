@@ -1,15 +1,6 @@
 <div class="speakers">
 {% for speaker in speakers %}
-  <script> console.log({{ speaker }})</script>
-    <script> console.log({{ speaker.twitter }})</script>
-{% if speaker.twitter != false %}
-  	{% set speakerPageUrl %}/speakers/{{ speaker.twitter }}/{% endset %}
-{% elif speaker.linkedin != false %}
-  	{% set speakerPageUrl %}/speakers/{{ speaker.linked_in }}/{% endset %}
-{% else %}
-    	{% set speakerPageUrl %}/speakers/{{ speaker.name }}/{% endset %}
-{% endif %}
-
+ 	{% set speakerPageUrl %}/speakers/{{ speaker.twitter }}/{% endset %}
 	<a href="{{ speakerPageUrl | url }}" class="speaker">
 		<img src="{{ speaker.avatar_url }}" alt="{{ speaker.name }}" class="speaker-img">
 		<h2 class="speaker-name">{{ speaker.name }}</h2>
