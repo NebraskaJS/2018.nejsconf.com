@@ -16,8 +16,10 @@ hideSponsorCTA: true
 			<h2>{{ speaker.name }}{% if speaker.keynote %}, Keynote{% endif %}</h2>
 
 			<dl>
+	{% if speaker.twitter_real%}
 				<dt>Twitter</dt>
-				<dd><a href="https://twitter.com/{{ speaker.twitter }}">@{{ speaker.twitter }}</a></dd>
+				<dd><a href="https://twitter.com/{{ speaker.twitter_real }}">@{{ speaker.twitter_real }}</a></dd>
+	{% endif %}
 	{% if speaker.bio %}
 				<dt>Bio</dt>
 				<dd>{{ speaker.bio | safe }}</dd>
