@@ -21,7 +21,7 @@
 	"social_avatar_url": "/assets/img/speakers/filler-social.jpg",
 	"website": "https://agiletransformation.com",
 	"twitter": "sallyElatta",
-	"twitter_real": false,
+	"twitter_real": "sallyElatta",
 	"bio": "Sally Elatta is the president of Agile Transformation Inc, founder of AgilityHealth and <a href='https://www.agilevideos.com' target='_blank'>AgileVideos.com</a>. She is a successful entrepreneur and thought leader in the space of Enterprise Business Agility and Measurement. Sally is a dynamic and engaging speaker who advises top executives of the leading global enterprises through their Enterprise Business Agility (EBA) transformations.",
 	"talk": "From her personal journey of overcoming barriers, as a young girl born in Sudan who migrated to the US with her family to starting her business which thrived despite tough economic times, Sally weaves her life’s learnings throughout this keynote, inviting all in attendance to Be Bold, Be Real, and Lead with LOVE.",
 	"time": false
@@ -103,7 +103,7 @@
 	"avatar_url": "/assets/img/speakers/eris_koleszar.jpg",
 	"social_avatar_url": "/assets/img/speakers/filler-social.jpg",
 	"twitter":"bellicapax",
-	"twitter_real":true,
+	"twitter_real":"bellicapax",
 	"linked_in": false,
 	"website": false,
 	"bio": "Eris Koleszar is a queer, trans game developer in her fifth year in the videogame industry. After four years with local mobile developer SkyVu, she left Omaha to join the creative minds at Funomena in San Francisco, where she's working on an unannounced virtual reality title. In 2016, she helped start and teach the first Girls Who Code club in Omaha. Two years later, Eris helped form the non-profit Mystery Code Society, which offers more specialized and advanced coding classes for women, femmes, and non-men. With MCS, she taught and developed curriculum for three classes specializing in game development and currently serves on the board. Outside of work and volunteering, her main goal is collaborating with her partner Hannah to mediate peace between their newly acquainted cats, Gus and Lilith.",
@@ -202,8 +202,8 @@
 	"social_avatar_url": "/assets/img/speakers/filler-social.jpg",
 	"twitter": "noniWilliams",
 	"twitter_real": false,
-	"linked_in": "https://www.linkedin.com/in/noni-williams/",
-	"bio": "Noni Williams finds her passion in solving problems and helping others understand that they are capable of solving problems too. This is evident in her current position as Manager of Solutions and Continuous Improvement where she works with data and extending the capacity for using data with after school professionals. She has a BA in Mathematics and is pursuing an MS in Mathematics with a concentration in Data Science. For Noni, data science is the perfect intersection between innovative problem solving, computer science, statistics, and math. In her free time, she enjoys writing poetry, nature photography, and solving problems on <a href='projecteuler.net' target='_blank'>projecteuler.net>/a>.",
+	"linked_in": "noni-williams/",
+	"bio": "Noni Williams finds her passion in solving problems and helping others understand that they are capable of solving problems too. This is evident in her current position as Manager of Solutions and Continuous Improvement where she works with data and extending the capacity for using data with after school professionals. She has a BA in Mathematics and is pursuing an MS in Mathematics with a concentration in Data Science. For Noni, data science is the perfect intersection between innovative problem solving, computer science, statistics, and math. In her free time, she enjoys writing poetry, nature photography, and solving problems on projecteuler.net.",
 	"talk": "Data science is a relatively new term, and is used to describe the field that lies at the cross section of mathematics, statistics, information science, and computer science. It is a vehicle for understanding and analyzing the world around us. In this talk, I will walk through what the life of a typical data science project looks like, as well as what my personal path has looked like thus far through the world of data science.",
 	"time": false
 },{
